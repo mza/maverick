@@ -1,0 +1,20 @@
+<div class='links'>
+  <div id='small-logo'>
+    <%= link_to image_tag('logo-small.gif', :size => "75x69"), :controller => :home %>
+  </div>
+  <div id='title'>
+    <strong><%= @site.name %></strong>
+    <div id='subtitle'>
+      <%= @site.url %>
+    </div>
+  </div>
+  <br clear='all' />
+</div>
+
+<div class='simple links'>
+  <%= link_to 'edit site', :controller => :sites, :action => :edit, :id => @site.id %>
+</div>
+
+<div id='content'>
+  Bucket name: <%= @site.bucket_name %>
+</div>

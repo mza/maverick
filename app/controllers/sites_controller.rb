@@ -1,6 +1,13 @@
 class SitesController < ApplicationController
 
+  require 'aws/s3'
+  include Maverick
+  
   before_filter :login_required
+  
+  def show
+    @site = Site.find(params[:id])
+  end
   
   def new
     @site = Site.new
@@ -18,6 +25,14 @@ class SitesController < ApplicationController
       flash[:warning] = "Site creation failed"
       render :action => :new 
     end
+  end
+
+  def edit
+    @site = Site.find(params[:id])
+  end
+
+  def update
+    @site = Site.find(params[:id])
   end
   
 end

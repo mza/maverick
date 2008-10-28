@@ -1,0 +1,22 @@
+<div class='links'>
+  <div id='small-logo'>
+    <%= link_to image_tag('logo-small.gif', :size => "75x69"), :controller => :home %>
+  </div>
+  <div id='title'>
+    <strong>S3 stats</strong>
+    <div id='subtitle'>
+      Details of our AWS usage
+    </div>
+  </div>
+  <br clear='all' />
+</div>
+
+<div id='content'>
+  Total buckets: <%= @buckets.size %>
+  <br />
+  <ul>
+  <% for bucket in @buckets %>
+  <li><%= bucket.name %></li>
+  <% end %>
+  </ul>
+</div>

@@ -3,18 +3,16 @@
     <%= link_to image_tag('logo-small.gif', :size => "75x69"), :controller => :home %>
   </div>
   <div id='title'>
-    <strong>Create new site</strong>
+    <strong>Edit <%= @site.name %></strong>
     <div id='subtitle'>
-      Start sketching web stuff in less than 20 seconds.
+      <%= @site.url %>
     </div>
   </div>
   <br clear='all' />
 </div>
 
-<%= render :partial => "shared/flashes" %>
-<%= render :partial => "shared/errors", :locals => { :model => "site" } %>
 <div id='content'>
-  <% form_for :site, @site, :url => { :controller => :sites, :action => :create } do |f| %>
+  <% form_for :site, @site, :url => { :controller => :sites, :action => :update, :id => @site.id } do |f| %>
     Site name:<br />
     <%= f.text_field :name %>
     <br /><br />
@@ -24,6 +22,6 @@
     URL:<br />
     <%= f.text_field :url %>
     <br /><br />
-    <%= f.submit "Create" %> or <%= link_to 'cancel', :controller => :home%>
+    <%= f.submit "Create" %> or <%= link_to 'cancel', :controller => :sites, :action => :show, :id => @site.id %>
   <% end %>
 </div>

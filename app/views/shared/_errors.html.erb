@@ -1,3 +1,5 @@
-<div class='errors'>
-  <%= error_messages_for model %>
-</div>
+<% unless error_messages_for(model).blank? %>
+  <div class='errors'>
+    <%= error_messages_for model %>
+  </div>
+<% end %>

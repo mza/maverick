@@ -68,3 +68,7 @@ Rails::Initializer.run do |config|
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 end
+
+require 'aws/s3'
+BUCKET_PREFIX = "maverick_s3"
+Site.bucket_prefix = BUCKET_PREFIX

@@ -39,7 +39,7 @@ div#tag {
 	font-weight: bold;
 }
 
-div#links {
+div.links {
 	margin: 0px auto;
 	margin-top: 40px;
 	width: 600px;
@@ -48,6 +48,10 @@ div#links {
 	border-right: 1px solid #ccc;
 	padding: 10px;
 	text-align: center;
+}
+
+div.simple {
+	margin-top: 10px;
 }
 
 div#small-logo {

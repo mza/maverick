@@ -19,16 +19,20 @@
 
 <%= render :partial => "shared/flashes" %>
 
-<div id='links'>
+<div class='links'>
   <% if logged_in? %>
     <%= current_user.login %>: 
     <% for site in @sites %> 
-      <%= site.nickname %> &middot;
+      <%= link_to site.nickname, :controller => :sites, :action => :show, :id => site.id %> &middot;
     <% end %>
     <%= link_to 'create &rarr;', :controller => :sites, :action => :new %>
   <% else %>
     <%= link_to 'Sign up', :controller => :users, :action => :new %> &middot; <%= link_to 'Log in', :controller => :sessiones, :action => :new %>
   <% end %>
+</div>
+
+<div class='simple links'>
+  <%= link_to 'stats', :action => :stats %>
 </div>
 
 </body>

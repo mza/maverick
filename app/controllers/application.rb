@@ -14,4 +14,12 @@ class ApplicationController < ActionController::Base
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
+    
+  BUCKET_PREFIX = "maverick_s3"
+  Site.bucket_prefix = BUCKET_PREFIX
+  
+  def bucket_prefix
+    BUCKET_PREFIX
+  end
+      
 end
