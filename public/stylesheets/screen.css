@@ -77,9 +77,26 @@ div#content {
 	border-bottom: 1px solid #ccc;
 }
 
+div.footer {
+	margin: 0px auto;
+	width: 600px;
+	margin-top: 10px;
+	color: #ccc;
+	font-size: 11px;
+}
+
 a, a:link, a:visited {
 	text-decoration: none;
 	color: #456195;
+}
+
+div.footer a, div.footer a:link, div.footer a:visited {
+	color: #ccc;
+}
+
+div.footer a:hover {
+	color: #009902;
+	text-decoration: none;
 }
 
 a:hover {

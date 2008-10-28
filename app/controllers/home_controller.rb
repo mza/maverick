@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   
   require 'aws/s3'
   
-  layout 'sites', :only => :stats
+  layout 'sites', :except => :stats
   
   def index
     if logged_in?
@@ -11,7 +11,14 @@ class HomeController < ApplicationController
   end
   
   def stats
-    @buckets = Maverick::S3.buckets
+    begin
+      @buckets = Maverick::S3.buckets
+    rescue Maverick::ConnectionFailedException
+      redirect_to :action => :failed
+    end
+  end
+  
+  def failed
   end
   
 end
