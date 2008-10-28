@@ -27,13 +27,16 @@
     <% end %>
     <%= link_to 'create &rarr;', :controller => :sites, :action => :new %>
   <% else %>
-    <%= link_to 'Sign up', :controller => :users, :action => :new %> &middot; <%= link_to 'Log in', :controller => :sessiones, :action => :new %>
+    <%= link_to 'Sign up', :controller => :users, :action => :new %> &middot; <%= link_to 'Log in', :controller => :sessions, :action => :new %>
   <% end %>
 </div>
 
-<div class='simple links'>
-  <%= link_to 'stats', :action => :stats %>
-</div>
+<% if logged_in? %>
+  <div class='simple links'>
+    <%= link_to 'stats', :action => :stats %> &middot; <%= link_to 'log out', { :controller => :sessions, :action => :destroy }, :method => :delete %>
+  </div>
+<% end %>
+
 
 <div class='footer'>
   <a href='http://www.greenisgood.co.uk/projects'>a Green Project</a>
