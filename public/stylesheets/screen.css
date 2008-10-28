@@ -23,6 +23,17 @@ div.flash {
 	padding: 10px;
 }
 
+div.errors {
+	margin: 0px auto;
+	width: 600px;
+	margin-top: 40px;
+	background: #C1DEF6;
+	border-bottom: 1px solid #3FA2FB;
+	border-right: 1px solid #3FA2FB;
+	padding: 10px;
+}
+
+
 div#tag {
 	color: #3C99ED;
 	font-weight: bold;

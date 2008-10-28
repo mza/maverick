@@ -23,15 +23,8 @@
   <br clear='all' />
 </div>
 
-<% unless flash.empty? %>
-<div class='flash'>
-  <%= flash[:notice] %>
-</div>
-<div class='flash'>
-  <%= flash[:warning] %>
-</div>
-<% end %>
-
+<%= render :partial => "shared/flashes" %>
+<%= render :partial => "shared/errors", :locals => { :model => "site" } %>
 <div id='content'>
   <% form_for :site, @site, :url => { :controller => :sites, :action => :create } do |f| %>
     Site name:<br />

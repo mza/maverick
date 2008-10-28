@@ -17,11 +17,7 @@
   </div>
 </div>
 
-<% unless flash.empty? %>
-<div class='flash'>
-  <%= flash[:notice] %>
-</div>
-<% end %>
+<%= render :partial => "shared/flashes" %>
 
 <div id='links'>
   <% if logged_in? %>
