@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <%= stylesheet_link_tag 'screen' %>
+	<title>Maverick : a sketchbook for web stuff</title>
+	
+</head>
+
+<body>
+<div id='logo'>
+  <%= image_tag "logo-big.gif", :size => "210x211" %>
+  <div id='tag'>
+    a sketchbook for web stuff
+  </div>
+</div>
+
+<% unless flash.empty? %>
+<div class='flash'>
+  <%= flash[:notice] %>
+</div>
+<% end %>
+
+<div id='links'>
+  <% if logged_in? %>
+    <%= current_user.login %>: 
+    <% for site in @sites %> 
+      <%= site.nickname %> &middot;
+    <% end %>
+    <%= link_to 'create &rarr;', :controller => :sites, :action => :new %>
+  <% else %>
+    <%= link_to 'Sign up', :controller => :users, :action => :new %> &middot; <%= link_to 'Log in', :controller => :sessiones, :action => :new %>
+  <% end %>
+</div>
+
+</body>
+</html>

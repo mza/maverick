@@ -1,0 +1,1763 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSites (20081028184002)
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCREATE TABLE "sites" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "url" varchar(255), "nickname" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081028184002')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sites")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:45:07) [GET]
+  Session ID: 8f48db08e64688dcf78d5beae351e87f
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:45:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:46:22) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:47:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:47:39) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+
+
+ActionView::TemplateError (undefined method `stylesheet_include_tag' for #<ActionView::Base:0x2557178>) on line #7 of app/views/home/index.html.erb:
+4: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+5: <head>
+6: 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+7:   <%= stylesheet_include_tag 'screen' %>
+8: 	<title>Maverick : a sketchbook for web stuff</title>
+9: 	
+10: </head>
+
+    app/views/home/index.html.erb:7
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/template.rb:73:in `render_template'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:250:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1156:in `render_for_file'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:886:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:858:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1208:in `default_render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1219:in `perform_action_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_trace (118.1ms)
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_request_and_response (0.7ms)
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:47:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:47:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:48:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:48:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:48:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:48:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:49:03) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:49:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:49:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:51:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:52:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:53:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:53:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:53:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:54:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:54:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:54:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:55:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+ERROR: compiling _run_erb_app47views47home47index46html46erb RAISED compile error
+/Users/mw4/Projects/maverick-s3/app/views/home/index.html.erb:24: syntax error, unexpected '<', expecting ')'
+  <% end ).to_s); @output_buffer.concat "\n"
+   ^
+/Users/mw4/Projects/maverick-s3/app/views/home/index.html.erb:30: syntax error, unexpected kENSURE, expecting kEND
+/Users/mw4/Projects/maverick-s3/app/views/home/index.html.erb:32: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47home47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n"
+@output_buffer.concat "\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n"
+@output_buffer.concat "<head>\n"
+@output_buffer.concat "\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( stylesheet_link_tag 'screen' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t<title>Maverick : a sketchbook for web stuff</title>\n"
+@output_buffer.concat "\t\n"
+@output_buffer.concat "</head>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<body>\n"
+@output_buffer.concat "<div id='logo'>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( image_tag "logo-big.gif", :size => "210x211" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <div id='tag'>\n"
+@output_buffer.concat "    a sketchbook for web stuff\n"
+@output_buffer.concat "  </div>\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<div id='links'>\n"
+@output_buffer.concat "  ";  if logged_in? ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  else ; @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat(( link_to 'Sign up', :controller => :users, :action => :new ).to_s); @output_buffer.concat " &middot; "; @output_buffer.concat(( link_to 'Log in', :controller => :sessiones, :action => :new 
+  <% end ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "</body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/mw4/Projects/maverick-s3/app/views/home/index.html.erb:32:in `compile!'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:58:in `compile'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:56:in `synchronize'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:56:in `compile'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:26:in `render'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/template.rb:73:in `render_template'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:250:in `render'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1156:in `render_for_file'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:886:in `render_without_benchmark'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:858:in `render_without_benchmark'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1208:in `default_render'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1219:in `perform_action_without_filters'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+/Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+/Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+/Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+/Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+/Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+/Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+/Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+./script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/mw4/Projects/maverick-s3/app/views/home/index.html.erb:24: syntax error, unexpected '<', expecting ')'
+  <% end ).to_s); @output_buffer.concat "\n"
+   ^
+/Users/mw4/Projects/maverick-s3/app/views/home/index.html.erb:30: syntax error, unexpected kENSURE, expecting kEND
+/Users/mw4/Projects/maverick-s3/app/views/home/index.html.erb:32: syntax error, unexpected $end, expecting kEND) on line #24 of app/views/home/index.html.erb:
+21:   <% if logged_in? %>
+22:   <% else %>
+23:     <%= link_to 'Sign up', :controller => :users, :action => :new %> &middot; <%= link_to 'Log in', :controller => :sessiones, :action => :new 
+24:   <% end %>
+25: </div>
+26: 
+27: </body>
+
+    app/views/home/index.html.erb:32:in `compile!'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:58:in `compile'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:56:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:56:in `compile'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:26:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/template.rb:73:in `render_template'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:250:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1156:in `render_for_file'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:886:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:858:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1208:in `default_render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1219:in `perform_action_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_trace (51.3ms)
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_request_and_response (0.6ms)
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:55:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:55:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:55:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-10-28 11:55:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--90f5283dcb7f416b5be7638d67991b37058ebbc8
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering users/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-10-28 11:56:05) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--0a22648cbea2710debef748ee8aa25e1237b7c62
+  Parameters: {"user"=>{"password_confirmation"=>"welcome", "login"=>"mza", "password"=>"welcome", "email"=>"matt.j.wood@gmail.com"}, "commit"=>"Sign up", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:29:in `table_structure'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/object/misc.rb:39:in `returning'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:28:in `table_structure'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/sqlite_adapter.rb:189:in `columns'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/base.rb:1220:in `columns'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/base.rb:2831:in `attributes_from_column_definition_without_lock'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/locking/optimistic.rb:55:in `attributes_from_column_definition'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/base.rb:2272:in `initialize'
+    /app/controllers/users_controller.rb:16:in `new'
+    /app/controllers/users_controller.rb:16:in `create'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1213:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1213:in `perform_action_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_trace (38.9ms)
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSites (20081028184002)
+Migrating to CreateUsers (20081028185055)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "email" varchar(255), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255), "remember_token_expires_at" datetime) [0m
+  [4;35;1mSQL (2.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081028185055')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sites")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2008-10-28 11:56:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--0a22648cbea2710debef748ee8aa25e1237b7c62
+  Parameters: {"action"=>"index", "controller"=>"users"}
+
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:56:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--0a22648cbea2710debef748ee8aa25e1237b7c62
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-10-28 11:56:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--0a22648cbea2710debef748ee8aa25e1237b7c62
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering users/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-10-28 11:56:44) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--0a22648cbea2710debef748ee8aa25e1237b7c62
+  Parameters: {"user"=>{"password_confirmation"=>"welcome", "login"=>"mza", "password"=>"welcome", "email"=>"matt.j.wood@gmail.com"}, "commit"=>"Sign up", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'mza') LIMIT 1[0m
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'matt.j.wood@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("salt", "updated_at", "crypted_password", "remember_token_expires_at", "remember_token", "login", "email", "created_at") VALUES('cc82e10ad1d891e579839672f559ede88629961e', '2008-10-28 18:56:44', '89cebae5ed75357759183f3bf5d0013d9fcc8f77', NULL, NULL, 'mza', 'matt.j.wood@gmail.com', '2008-10-28 18:56:44')[0m
+Redirected to /
+Completed in 243ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:56:44) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1RoYW5rcyBmb3Igc2lnbmluZyB1cCEGOgpAdXNlZHsGOwlG--286fade2185df9a39ca98bf6a8846fb451b5c2d4
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:57:08) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1RoYW5rcyBmb3Igc2lnbmluZyB1cCEGOgpAdXNlZHsGOwhUOg5yZXR1cm5fdG8w--b1da1d096f0324dfe9f8a350d98f70d264a279b2
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 11:57:30) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 11:57:31) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+
+
+ActionController::UnknownAction (No action responded to new. Actions: ):
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 11:57:50) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+
+
+ActionView::MissingTemplate (Missing template sites/new.erb in view path /Users/mw4/Projects/maverick-s3/app/views:):
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/template.rb:95:in `find_full_path'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/template.rb:16:in `initialize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:321:in `new'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:321:in `_unmemoized__pick_template'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/memoizable.rb:70:in `_pick_template'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:250:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1156:in `render_for_file'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:886:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:858:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1208:in `default_render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1214:in `perform_action_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 11:58:14) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 11:58:38) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 11:58:48) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:00:35) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:01:13) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:02:43) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:04:22) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:04:43) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:04:55) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:05:24) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:05:34) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:05:55) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:06:13) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:06:21) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:06:25) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:06:44) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:06:58) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:07:13) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 90ms (View: 88, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:07:25) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:07:33) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:07:37) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:08:10) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:08:11) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:08:12) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:08:54) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+
+
+ActionView::TemplateError (undefined method `sites_path' for #<ActionView::Base:0x2111e9c>) on line #27 of app/views/sites/new.html.erb:
+24: </div>
+25: 
+26: <div id='content'>
+27:   <% form_for @site, :controller => :sites, :action => :create do |f| %>
+28:   <% end %>
+29: </div>
+30: 
+
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/polymorphic_routes.rb:111:in `__send__'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/polymorphic_routes.rb:111:in `polymorphic_url'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/polymorphic_routes.rb:118:in `polymorphic_path'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/helpers/form_helper.rb:269:in `apply_form_for_options!'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/helpers/form_helper.rb:248:in `form_for'
+    app/views/sites/new.html.erb:27
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/template.rb:73:in `render_template'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:250:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1156:in `render_for_file'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:886:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:858:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1208:in `default_render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1214:in `perform_action_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_trace (44.4ms)
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_request_and_response (1.1ms)
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:09:12) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:10:37) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:10:53) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:11:18) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:12:08) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:12:18) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:12:20) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:12:21) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:14:02) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:14:04) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"new", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+Rendering sites/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:14:55) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"new", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+Rendering sites/new
+
+
+ActionView::TemplateError (undefined method `empty' for {}:ActionController::Flash::FlashHash) on line #26 of app/views/sites/new.html.erb:
+23:   <br clear='all' />
+24: </div>
+25: 
+26: <% unless flash.empty %>
+27: <div class='flash'>
+28:   <%= flash[:notice] %>
+29: </div>
+
+    app/views/sites/new.html.erb:26
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/template.rb:73:in `render_template'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:250:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1156:in `render_for_file'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:886:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:858:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1208:in `default_render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1214:in `perform_action_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_trace (36.6ms)
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:15:03) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"new", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+Rendering sites/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:15:05) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"new", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+Rendering sites/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:15:28) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"new", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+Rendering sites/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:15:40) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"new", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+Rendering sites/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:16:15) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"new", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+Rendering sites/new
+
+
+ActionView::TemplateError (undefined local variable or method `url' for #<ActionView::Base:0x2431078>) on line #36 of app/views/sites/new.html.erb:
+33: <% end %>
+34: 
+35: <div id='content'>
+36:   <% form_for :site, @site, url => { :controller => :sites, :action => :create } do |f| %>
+37:     Site name:<br />
+38:     <%= f.text_field :name %>
+39:     <br /><br />
+
+    app/views/sites/new.html.erb:36
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/template.rb:73:in `render_template'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:250:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1156:in `render_for_file'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:886:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:858:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1208:in `default_render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1214:in `perform_action_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_trace (127.5ms)
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_request_and_response (1.3ms)
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:16:28) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"new", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+Rendering sites/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:16:34) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+
+
+ActionView::TemplateError (undefined method `empty' for {}:ActionController::Flash::FlashHash) on line #20 of app/views/home/index.html.erb:
+17:   </div>
+18: </div>
+19: 
+20: <% unless flash.empty %>
+21: <div class='flash'>
+22:   <%= flash[:notice] %>
+23: <div>
+
+    app/views/home/index.html.erb:20
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/renderable.rb:34:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/template.rb:73:in `render_template'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_view/base.rb:250:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1156:in `render_for_file'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:886:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:858:in `render_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1208:in `default_render'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1219:in `perform_action_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /Users/mw4/.gem/ruby/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_trace (37.5ms)
+Rendered /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /Users/mw4/.gem/ruby/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:16:42) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 98ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:16:43) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2008-10-28 12:16:50) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"create", "controller"=>"sites", "site"=>{"name"=>"New site", "nickname"=>"new", "url"=>"new.com"}}
+  [4;36;1mSite Create (0.4ms)[0m   [0;1mINSERT INTO "sites" ("name", "updated_at", "nickname", "url", "created_at") VALUES('New site', '2008-10-28 19:16:50', 'new', 'new.com', '2008-10-28 19:16:50')[0m
+SAVE!
+Redirected to controllerhome
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/sites/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:16:50) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsIRjoOcmV0dXJuX3RvMA==--8486ac5b89d6531f2df6935af510ba5d252d5934
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:17:15) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsJVA==--70d89e3e27a3327e099b9d27fc737199b6902bab
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:17:17) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2008-10-28 12:17:21) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"create", "controller"=>"sites", "site"=>{"name"=>"another", "nickname"=>"one", "url"=>"son"}}
+  [4;35;1mSite Create (1.8ms)[0m   [0mINSERT INTO "sites" ("name", "updated_at", "nickname", "url", "created_at") VALUES('another', '2008-10-28 19:17:21', 'one', 'son', '2008-10-28 19:17:21')[0m
+SAVE!
+Redirected to controllerhome
+Completed in 82ms (DB: 2) | 302 Found [http://localhost/sites/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:17:21) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsIRjoOcmV0dXJuX3RvMA==--8486ac5b89d6531f2df6935af510ba5d252d5934
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:17:35) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsJVA==--70d89e3e27a3327e099b9d27fc737199b6902bab
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2008-10-28 12:17:36) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"create", "controller"=>"sites", "site"=>{"name"=>"another", "nickname"=>"", "url"=>""}}
+  [4;35;1mSite Create (0.4ms)[0m   [0mINSERT INTO "sites" ("name", "updated_at", "nickname", "url", "created_at") VALUES('another', '2008-10-28 19:17:36', '', '', '2008-10-28 19:17:36')[0m
+SAVE!
+Redirected to controllerhome
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/sites/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:17:36) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsJRg==--33ecfeb9881dc33d56a6c7401cf7b81cdb51635d
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:18:31) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsIVDoOcmV0dXJuX3RvMA==--8399ec1af8e437610a04dcc2073357e35208ed0f
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:18:32) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2008-10-28 12:18:33) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"create", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+  [4;36;1mSite Create (0.4ms)[0m   [0;1mINSERT INTO "sites" ("name", "updated_at", "nickname", "url", "created_at") VALUES('', '2008-10-28 19:18:33', '', '', '2008-10-28 19:18:33')[0m
+SAVE!
+Redirected to controllerhome
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/sites/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:18:33) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsJRg==--33ecfeb9881dc33d56a6c7401cf7b81cdb51635d
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:18:43) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsIVDoOcmV0dXJuX3RvMA==--8399ec1af8e437610a04dcc2073357e35208ed0f
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:18:44) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2008-10-28 12:18:46) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"create", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+  [4;35;1mSite Create (0.4ms)[0m   [0mINSERT INTO "sites" ("name", "updated_at", "nickname", "url", "created_at") VALUES('', '2008-10-28 19:18:46', '', '', '2008-10-28 19:18:46')[0m
+SAVE!
+Redirected to controllerhome
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/sites/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:18:46) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsJRg==--33ecfeb9881dc33d56a6c7401cf7b81cdb51635d
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:18:58) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsIVDoOcmV0dXJuX3RvMA==--8399ec1af8e437610a04dcc2073357e35208ed0f
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+Rendering sites/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2008-10-28 12:18:59) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"create", "controller"=>"sites", "site"=>{"name"=>"", "nickname"=>"", "url"=>""}}
+  [4;35;1mSite Create (0.4ms)[0m   [0mINSERT INTO "sites" ("name", "updated_at", "nickname", "url", "created_at") VALUES('', '2008-10-28 19:18:59', '', '', '2008-10-28 19:18:59')[0m
+SAVE!
+Redirected to controllerhome
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/sites/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:18:59) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsIRjoOcmV0dXJuX3RvMA==--8486ac5b89d6531f2df6935af510ba5d252d5934
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSite Delete all (3.3ms)[0m   [0;1mDELETE FROM "sites" WHERE 1=1[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:19:55) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsJVA==--70d89e3e27a3327e099b9d27fc737199b6902bab
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSites (20081028184002)
+Migrating to CreateUsers (20081028185055)
+Migrating to AddUserToSite (20081028192022)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mALTER TABLE "sites" ADD "user_id" integer[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081028192022')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sites")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:24:56) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering home/index
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites".user_id = 1) [0m
+Completed in 19ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2008-10-28 12:24:57) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--b58e8f76e6b4f28e3ab5252524aa21795021627b
+  Parameters: {"action"=>"new", "controller"=>"sites"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering sites/new
+Completed in 21ms (View: 7, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2008-10-28 12:25:07) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoOcmV0dXJuX3RvMA==--4b078dcd8a600feb0f59df390c146b38e1f18516
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"cf6c19ab155a2d0a33dbc22ff3608215a0479066", "action"=>"create", "controller"=>"sites", "site"=>{"name"=>"Green is Good", "nickname"=>"green", "url"=>"http://www.greenisgood.co.uk"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mSite Create (0.5ms)[0m   [0mINSERT INTO "sites" ("name", "updated_at", "nickname", "url", "user_id", "created_at") VALUES('Green is Good', '2008-10-28 19:25:07', 'green', 'http://www.greenisgood.co.uk', 1, '2008-10-28 19:25:07')[0m
+SAVE!
+Redirected to controllerhome
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/sites/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-28 12:25:07) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMGFkY2IyY2M0NmU0MDlhZWE2ZDdhYTdhOGY4NmVhMTI6DHVzZXJfaWRpBjoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFk5ldyBzaXRlIGNyZWF0ZWQuBjoKQHVzZWR7BjsJRg==--33ecfeb9881dc33d56a6c7401cf7b81cdb51635d
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering home/index
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites".user_id = 1) [0m
+Completed in 20ms (View: 8, DB: 0) | 200 OK [http://localhost/]

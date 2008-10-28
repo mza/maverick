@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <%= stylesheet_link_tag 'screen' %>
+	<title>New site : Maverick</title>
+	
+</head>
+
+<body>
+<div id='links'>
+  <div id='small-logo'>
+    <%= link_to image_tag('logo-small.gif', :size => "75x69"), :controller => :home %>
+  </div>
+  <div id='title'>
+    <strong>Create new site</strong>
+    <div id='subtitle'>
+      Start sketching web stuff in less than 20 seconds.
+    </div>
+  </div>
+  <br clear='all' />
+</div>
+
+<% unless flash.empty? %>
+<div class='flash'>
+  <%= flash[:notice] %>
+</div>
+<div class='flash'>
+  <%= flash[:warning] %>
+</div>
+<% end %>
+
+<div id='content'>
+  <% form_for :site, @site, :url => { :controller => :sites, :action => :create } do |f| %>
+    Site name:<br />
+    <%= f.text_field :name %>
+    <br /><br />
+    Nickname:<br />
+    <%= f.text_field :nickname %>
+    <br /><br />
+    URL:<br />
+    <%= f.text_field :url %>
+    <br /><br />
+    <%= f.submit "Create" %> or <%= link_to 'cancel', :controller => :home%>
+  <% end %>
+</div>
+
+</body>
+</html>
