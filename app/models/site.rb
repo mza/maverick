@@ -1,7 +1,6 @@
 class Site < ActiveRecord::Base
   
   require 'aws/s3'
-  include AWS::S3
   
   belongs_to :user
   validates_presence_of :name, :nickname, :url
@@ -12,14 +11,11 @@ class Site < ActiveRecord::Base
   @@bucket_prefix = ""
   
   def create_bucket
-    Maverick::S3.connect
-    logger.debug "CREATING BUCKET: #{self.bucket_name}"
-    Bucket.create(self.bucket_name)
+    Maverick::S3.create_bucket(self.bucket_name)
   end
   
   def destroy_bucket
-    Maverick::S3.connect
-    Bucket.delete(self.bucket_name)
+    Maverick::S3.delete_bucket(self.bucket_name)
   end
   
   def bucket_name
