@@ -20,6 +20,10 @@ class Site < ActiveRecord::Base
     p
   end
   
+  def post(title)
+    Post.new(Maverick::S3.find_object(title, self.bucket_name))
+  end
+  
   def add_post(title, file)
     Maverick::S3.store(title, file.read, self.bucket_name)
   end

@@ -32,6 +32,10 @@ module Maverick
       S3Object.store(file_name, data, bucket)
     end
     
+    def self.find_object(name, bucket)
+      S3Object.find(name, bucket)
+    end
+    
     def self.find_bucket(name)
       connect
       Bucket.find(name)

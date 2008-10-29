@@ -27,7 +27,7 @@
   <p>
     <ul>
       <% for post in @site.posts %>
-      <%= post.title %>
+      <li><%= link_to post.title, "/#{@site.nickname}/pages/show/#{post.title}" %></li>
       <% end %>
     </ul>
   </p>
