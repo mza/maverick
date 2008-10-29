@@ -14,7 +14,7 @@
 <%= render :partial => "shared/flashes" %>
 
 <div class='simple links'>
-  <strong><%= link_to 'view site', :controller => :pages, :action => :index, :id => @site.nickname %></strong> &middot; <%= link_to 'edit', :controller => :sites, :action => :edit, :id => @site.id %> &middot; <%= link_to 'remove', { :controller => :sites, :action => :delete, :id => @site.id }, :confirm => "This will remove this site and all related posts?\n\nAre your sure?" %>
+  <strong><%= link_to 'view site', "/#{@site.nickname}/pages" %></strong> &middot; <%= link_to 'edit', :controller => :sites, :action => :edit, :id => @site.id %> &middot; <%= link_to 'remove', { :controller => :sites, :action => :delete, :id => @site.id }, :confirm => "This will remove this site and all related posts?\n\nAre your sure?" %>
 </div>
 
 <div id='content'>

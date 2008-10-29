@@ -1,2 +1,54 @@
-<h1><%= @site.name %></h1>
-Posts: <%= @site.posts.size %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<%= stylesheet_link_tag @site.nickname%>	
+	<link href="feed://feeds.feedburner.com/greenism" rel="alternate" title="RSS" type="application/rss+xml" /> 
+		
+	<title><%= @site.name %> : software, science, etc</title>
+	
+</head>
+
+<body>
+	
+	<div id='container'>
+		<div id='bar'>
+			&nbsp;
+		</div>
+		<div id='header'>
+			<div id='colophon'>
+				<a href="/"><img alt="Green is Good: features articles relating to sofware, science and the space in-between" height="100" src="/images/green/colophon.png" width="397" /></a>
+				<div id='tag'>
+					A scientific software weblog, by <a href="/pages/about">Matt Wood</a>.
+				</div>
+			</div>
+			<div id='links'>
+				<div class='previous'>
+					
+					<div class='link_title'>RECENTLY</div>
+					<div class='link_content'><a href="/pages/show/barcamb-2-approaching">Barcamp Cambridge 2 approaches</a></div>
+					
+				</div>
+				<div class='quick'>
+					<ul>
+						<li><a href="/">HOME</a></li>
+						<li><a href="http://greenisgood.tumblr.com">LINKED LIST</a></li>
+						<li></li>						
+						<li><a href="/pages/about">ABOUT</a></li>
+					</ul>
+				</div>
+			</div>
+			<br clear='all' />
+		</div>
+		<div id='headline'>
+			
+			<div class='headline_image' style='background-image: url(http://farm4.static.flickr.com/3137/2525367436_b1f4caaf53_o_d.jpg)'>
+				<div class='headline_title'>					
+					<a href="/pages/show/sciblog08">Science Blogging 2008: London &raquo;</a></div>
+				<br clear='all' />
+			</div>
+			
+		</div>
+		<div id='content'>
