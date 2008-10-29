@@ -4,12 +4,22 @@ module Maverick
     require 'aws/s3'
     include AWS::S3
     
+    cattr_accessor :settings
+    
+    def self.load_settings
+      @@settings = YAML.load(File.open("#{Rails.root}/config/s3.yml")).symbolize_keys
+    end
+    
     def self.connect
+      if @@settings.blank?
+        load_settings
+      end
+      
       aws = nil
       begin
         aws = AWS::S3::Base.establish_connection!(
-           :access_key_id     => '0BQ9SCFHD5BG50YG2JG2',
-           :secret_access_key => 'VlDdK4jVtoswxYq9QrXjgHnGZhlv3dGs8BQsP9qe'
+           :access_key_id     => settings[:access_key_id],
+           :secret_access_key => settings[:secret_access_key]
         )
       rescue 
         raise Maverick::ConnectionFailedException
@@ -29,10 +39,12 @@ module Maverick
     end
     
     def self.store(file_name, data, bucket)
+      connect
       S3Object.store(file_name, data, bucket)
     end
     
     def self.find_object(name, bucket)
+      connect
       S3Object.find(name, bucket)
     end
     
