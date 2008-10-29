@@ -6,7 +6,23 @@ class Site < ActiveRecord::Base
   after_create :create_bucket
   before_destroy :destroy_bucket
   
+  attr_accessor :bucket
   cattr_accessor :bucket_prefix
+  
+  def posts
+    if self.bucket.blank?
+      self.bucket = Maverick::S3.find_bucket(self.bucket_name)
+    end
+    p = []
+    self.bucket.objects.each do |object|
+      p << Post.new(object)
+    end
+    p
+  end
+  
+  def add_post(title, file)
+    Maverick::S3.store(title, file.read, self.bucket_name)
+  end
   
   def create_bucket
     Maverick::S3.create_bucket(self.bucket_name)

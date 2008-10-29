@@ -35,4 +35,30 @@ class SitesController < ApplicationController
     @site = Site.find(params[:id])
   end
   
+  def delete
+    @site = Site.find(params[:id])
+    if @site.destroy
+      flash[:notice] = "Site removed"
+      redirect_to :controller => :home, :action => :index
+    end
+  end
+  
+  def upload
+    @site = Site.find(params[:id])
+  end
+  
+  def import
+    @site = Site.find(params[:id])
+    data = params[:import][:upload]
+    
+    unless data.blank?
+      @site.add_post(params[:import][:stub], data)
+      flash[:notice] = "Post uploaded"
+    else
+      flash[:notice] = "Upload failed: file was empty!"
+    end
+    
+    redirect_to :action => :show, :id => @site.id
+  end
+  
 end

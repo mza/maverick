@@ -1,0 +1,24 @@
+<div class='links'>
+  <div id='small-logo'>
+    <%= link_to image_tag('logo-small.gif', :size => "75x69"), :controller => :home %>
+  </div>
+  <div id='title'>
+    <strong>Upload post</strong>
+    <div id='subtitle'>
+      Upload a new post to <%= @site.name %>.
+    </div>
+  </div>
+  <br clear='all' />
+</div>
+
+<div id='content'>
+	<% form_for(:import, :url => { :controller => :sites, :action => :import, :id => @site.id }, :html => { :multipart => true }) do |f| -%>
+	  Post stub:<br />
+	  <%= f.text_field :stub%>
+	  <br /><br />
+    Upload file:<br />
+    <%= f.file_field :upload %>
+    <br /><br />
+    <%= f.submit "Upload" %> or <%= link_to 'cancel', :controller => :home %>
+  <% end %>
+</div>

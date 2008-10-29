@@ -15,15 +15,31 @@ module Maverick
         raise Maverick::ConnectionFailedException
       end
       
-      unless aws.http.active?
-        raise Maverick::ConnectionFailedException
-      end
+      # unless aws.http.active?
+      #   raise Maverick::ConnectionFailedException
+      # end
       
     end
     
-    def self.buckets
+    def self.reconnect
+      if AWS::S3::Base.connected?
+        AWS::S3::Base.disconnect!
+      end
       connect
-      Service.buckets
+    end
+    
+    def self.store(file_name, data, bucket)
+      S3Object.store(file_name, data, bucket)
+    end
+    
+    def self.find_bucket(name)
+      connect
+      Bucket.find(name)
+    end
+    
+    def self.buckets(reload = nil)      
+      connect
+      Service.buckets(reload)
     end
     
     def self.create_bucket(name)
@@ -33,7 +49,7 @@ module Maverick
     
     def self.delete_bucket(name)
       connect
-      Bucket.delete(self.bucket_name)
+      Bucket.delete(name)
     end
     
     def self.logger
