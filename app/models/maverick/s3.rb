@@ -37,15 +37,20 @@ module Maverick
       end
       connect
     end
-    
+        
     def self.store(file_name, data, bucket)
       connect
-      S3Object.store(file_name, data, bucket)
+      # For public access control - :access => :public_read
+      S3Object.store(file_name, data, bucket, :access => :public_read)
     end
     
     def self.find_object(name, bucket)
       connect
-      S3Object.find(name, bucket)
+      begin
+        S3Object.find(name, bucket)
+      rescue AWS::S3::NoSuchKey
+        raise Maverick::NoSuchKeyException
+      end
     end
     
     def self.find_bucket(name)

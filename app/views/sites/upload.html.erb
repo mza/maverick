@@ -12,6 +12,15 @@
 </div>
 
 <div id='content'>
+  <div class='tips'>
+    Tips:
+    <ul>
+      <li>Site header pages should be stubbed: <i>header</i></li>
+      <li>Site footer pages should be stubbed: <i>footer</i></li>
+      <li>Site CSS file should be stubbed: <i>styles</i></li>      
+      <li>Posts can be stubbed as anything else</li>
+    </ul>
+  </div>
 	<% form_for(:import, :url => { :controller => :sites, :action => :import, :id => @site.id }, :html => { :multipart => true }) do |f| -%>
 	  Post stub:<br />
 	  <%= f.text_field :stub%>

@@ -85,6 +85,17 @@ div.footer {
 	font-size: 11px;
 }
 
+div.tips {
+	font-size: 11px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+
+div.tips ul {
+	list-style: square;
+}
+
 a, a:link, a:visited {
 	text-decoration: none;
 	color: #456195;

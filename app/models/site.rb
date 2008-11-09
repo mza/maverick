@@ -10,14 +10,28 @@ class Site < ActiveRecord::Base
   cattr_accessor :bucket_prefix
   
   def posts
+    all_assets :filter_by => reserved_names
+  end
+    
+  def all_assets(options = {})
     if self.bucket.blank?
       self.bucket = Maverick::S3.find_bucket(self.bucket_name)
     end
     p = []
     self.bucket.objects.each do |object|
-      p << Post.new(object)
+      unless options[:filter_by].blank?
+        unless options[:filter_by].include? object.key
+          p << Post.new(object)
+        end
+      else
+        p << Post.new(object)
+      end
     end
-    p
+    p 
+  end
+  
+  def reserved_names
+    [ "header", "footer", "styles.css" ]
   end
   
   def post(title)
@@ -26,6 +40,30 @@ class Site < ActiveRecord::Base
   
   def add_post(title, file)
     Maverick::S3.store(title, file.read, self.bucket_name)
+  end
+
+  def stylesheet
+    begin
+      Maverick::S3.find_object("styles", self.bucket_name).value
+    rescue Maverick::NoSuchKeyException
+      ""
+    end
+  end
+  
+  def header
+    begin
+      Maverick::S3.find_object("header", self.bucket_name).value
+    rescue Maverick::NoSuchKeyException
+      "HEADER"
+    end
+  end
+  
+  def footer
+    begin
+      Maverick::S3.find_object("footer", self.bucket_name).value
+    rescue Maverick::NoSuchKeyException
+      "FOOTER"
+    end
   end
   
   def create_bucket

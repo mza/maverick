@@ -14,4 +14,8 @@ class Post
     @object.value
   end
   
+  def last_modified
+    @object.about['last-modified'].to_date.to_formatted_s :long
+  end
+  
 end
