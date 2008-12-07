@@ -30,6 +30,13 @@ class SitesController < ApplicationController
   def edit
     @site = Site.find(params[:id])
   end
+  
+  def remove
+    @site = Site.find(params[:id])
+    @site.remove_post(params[:post])
+    flash[:notice] = "Post removed from S3"
+    redirect_to :controller => :sites, :action => :show, :id => @site.id
+  end
 
   def update
     @site = Site.find(params[:id])

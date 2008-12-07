@@ -44,6 +44,10 @@ module Maverick
       S3Object.store(file_name, data, bucket, :access => :public_read)
     end
     
+    def self.remove(name, bucket)
+      S3Object.delete(name, bucket)
+    end
+        
     def self.find_object(name, bucket)
       connect
       begin

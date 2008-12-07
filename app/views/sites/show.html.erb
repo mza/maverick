@@ -27,7 +27,7 @@
   <p>
     <ul>
       <% for post in @site.all_assets %>
-      <li><%= link_to post.title, "/#{@site.nickname}/pages/show/#{post.title}" %></li>
+      <li><%= link_to post.title, "/#{@site.nickname}/pages/show/#{post.title}" %> &middot; <%= link_to 'x', :controller => :sites, :action => :remove, :id => @site.id, :post => post.title %></li>
       <% end %>
     </ul>
   </p>

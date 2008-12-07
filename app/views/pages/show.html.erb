@@ -1,1 +1,3 @@
-<%= @post.content %>
+<%= render :partial => 'content', :locals => { :content => @site.header } %>
+<%= render :partial => 'post', :locals => { :post => @post } %>
+<%= render :partial => 'content', :locals => { :content => @site.footer } %>

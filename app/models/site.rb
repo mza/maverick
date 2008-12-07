@@ -21,7 +21,9 @@ class Site < ActiveRecord::Base
     self.bucket.objects.each do |object|
       unless options[:filter_by].blank?
         unless options[:filter_by].include? object.key
-          p << Post.new(object)
+          unless object.key.match("png")
+            p << Post.new(object)
+          end
         end
       else
         p << Post.new(object)
@@ -32,6 +34,10 @@ class Site < ActiveRecord::Base
   
   def reserved_names
     [ "header", "footer", "styles.css" ]
+  end
+  
+  def remove_post(title)
+    Maverick::S3.remove(title, self.bucket_name)
   end
   
   def post(title)
@@ -52,7 +58,7 @@ class Site < ActiveRecord::Base
   
   def header
     begin
-      Maverick::S3.find_object("header", self.bucket_name).value
+      Post.new Maverick::S3.find_object("header", self.bucket_name)
     rescue Maverick::NoSuchKeyException
       "HEADER"
     end
@@ -60,7 +66,7 @@ class Site < ActiveRecord::Base
   
   def footer
     begin
-      Maverick::S3.find_object("footer", self.bucket_name).value
+      Post.new Maverick::S3.find_object("footer", self.bucket_name)
     rescue Maverick::NoSuchKeyException
       "FOOTER"
     end
