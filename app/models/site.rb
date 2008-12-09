@@ -3,10 +3,10 @@ class Site < ActiveRecord::Base
   belongs_to :user
   validates_presence_of :name, :nickname, :url
   
-  after_create :create_bucket
-  before_destroy :destroy_bucket
+  after_create :create_location
+  before_destroy :destroy_location
   
-  attr_accessor :bucket
+  attr_accessor :collection
   cattr_accessor :bucket_prefix
   
   def posts
@@ -14,11 +14,11 @@ class Site < ActiveRecord::Base
   end
     
   def all_assets(options = {})
-    if self.bucket.blank?
-      self.bucket = Maverick::S3.find_bucket(self.bucket_name)
+    if self.collection.blank?
+      self.collection = Maverick::Content.list(self.bucket_name)
     end
     p = []
-    self.bucket.objects.each do |object|
+    self.collection.objects.each do |object|
       unless options[:filter_by].blank?
         unless options[:filter_by].include? object.key
           unless object.key.match("png")
@@ -37,20 +37,20 @@ class Site < ActiveRecord::Base
   end
   
   def remove_post(title)
-    Maverick::S3.remove(title, self.bucket_name)
+    Maverick::Content.remove(title, self.bucket_name)
   end
   
   def post(title)
-    Post.new(Maverick::S3.find_object(title, self.bucket_name))
+    Post.new(Maverick::Content.retrieve(title, self.bucket_name))
   end
   
   def add_post(title, file)
-    Maverick::S3.store(title, file.read, self.bucket_name)
+    Maverick::Content.store(title, file.read, self.bucket_name)
   end
 
   def stylesheet
     begin
-      Maverick::S3.find_object("styles", self.bucket_name).value
+      Maverick::Content.retrieve("styles", self.bucket_name).value
     rescue Maverick::NoSuchKeyException
       ""
     end
@@ -58,7 +58,7 @@ class Site < ActiveRecord::Base
   
   def header
     begin
-      Post.new Maverick::S3.find_object("header", self.bucket_name)
+      Post.new Maverick::Content.retrieve("header", self.bucket_name)
     rescue Maverick::NoSuchKeyException
       "HEADER"
     end
@@ -66,22 +66,22 @@ class Site < ActiveRecord::Base
   
   def footer
     begin
-      Post.new Maverick::S3.find_object("footer", self.bucket_name)
+      Post.new Maverick::Content.retrieve("footer", self.bucket_name)
     rescue Maverick::NoSuchKeyException
       "FOOTER"
     end
   end
   
-  def create_bucket
-    Maverick::S3.create_bucket(self.bucket_name)
+  def create_location
+    Maverick::Content.create_location(self.bucket_name)
   end
   
-  def destroy_bucket
-    Maverick::S3.delete_bucket(self.bucket_name)
+  def destroy_location
+    Maverick::Content.delete_location(self.bucket_name)
   end
   
-  def bucket_name
-    bucket_prefix + "_#{self.nickname}" 
+  def location_name
+    bucket_prefix + "_#{self.nickname}"
   end
   
   def bucket_prefix
