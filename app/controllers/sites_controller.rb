@@ -1,7 +1,6 @@
 class SitesController < ApplicationController
 
   require 'aws/s3'
-  include Maverick
   
   before_filter :login_required
   
