@@ -37,6 +37,12 @@ module Maverick
     
       def list(name)
       end
+      
+      def create_location(name)
+      end
+      
+      def delete_location(name)
+      end
               
     end
     
