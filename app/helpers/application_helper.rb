@@ -17,7 +17,7 @@ module ApplicationHelper
         logger.debug "METHOD MISSING SEND #{method}: [ #{working_post.class.to_s} #{working_post.object_id} ]"
         working_post.send(method, *params)
       rescue NoMethodError
-        raise NoMethodError.new "Method not found in ApplicationHelper or Post class: #{method}"
+        raise NoMethodError.new("Method not found in ApplicationHelper or Post class: #{method}")
       end
     end
   end
