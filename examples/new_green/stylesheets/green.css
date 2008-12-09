@@ -1,0 +1,72 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+}
+
+img {
+	border: 0px;
+}
+
+h1 {
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+	font-size: 34px;
+	font-style: italic;
+	font-weight: normal;
+	color: #008000;
+	font-family: georgia, times, serif;
+}
+
+div.container {
+	margin: 0 auto;
+	width: 700px;
+}
+
+div#content {
+	width: 450px;
+	float: left;
+}
+
+div#menu {
+	margin: 0px 0px 0px 0px;
+	padding: 50px 15px 15px 15px;
+	width: 220px;
+	float: right;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 4px solid #008000;
+}
+
+div#title {
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+div#title strong {
+	font-weight: normal;
+	font-size: 26px;
+	color: #333;
+}
+
+div#colophon {
+	font-size: 14px;
+	color: #333;
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+
+div#author {
+	color: #666;
+}
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: #00AF00;
+}
+
+a:hover {
+	text-decoration: underline;
+}
