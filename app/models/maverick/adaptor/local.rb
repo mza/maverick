@@ -1,11 +1,19 @@
 module Maverick
   module Adaptor
     module Local
-      
+            
       @@settings = nil
-          
+      
       def description
         "Local"
+      end
+    
+      def settings=(setup)
+        @@settings = setup
+      end
+      
+      def settings
+        @@settings
       end
     
       def load_settings
@@ -36,12 +44,21 @@ module Maverick
       end
     
       def list(name)
+        collection = Maverick::Collection.new
+        Dir.new("#{path}/#{name}").entries.reject { |e| [ "..", "." ].include? e }.each do |file|
+          collection << file
+        end
+        collection
       end
       
       def create_location(name)
       end
       
       def delete_location(name)
+      end
+      
+      def path
+        settings[:path]
       end
               
     end

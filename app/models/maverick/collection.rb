@@ -1,8 +1,8 @@
 module Maverick
-  class Collection
+  class Collection < Array
     
     def objects
     end
-    
+        
   end
 end
