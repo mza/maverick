@@ -83,6 +83,10 @@ class Site < ActiveRecord::Base
   def location_name
     bucket_prefix + "_#{self.nickname}"
   end
+
+  def bucket_name
+    location_name
+  end
   
   def bucket_prefix
     @@bucket_prefix

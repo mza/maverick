@@ -13,6 +13,9 @@ module Maverick
       end
       
       def settings
+        if @@settings.blank?
+          load_settings
+        end
         @@settings
       end
     
@@ -53,13 +56,16 @@ module Maverick
       end
       
       def create_location(name)
+        new_dir = "#{self.path}/#{name}"
+        logger.debug "Creating in: #{new_dir}"
+        Dir.mkdir(new_dir) unless File.directory?(new_dir) 
       end
       
       def delete_location(name)
       end
       
       def path
-        settings[:path]
+        "#{settings[:path]}"
       end
               
     end
