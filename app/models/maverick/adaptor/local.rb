@@ -35,7 +35,7 @@ module Maverick
         
       def store(file_name, data, bucket)
         connect
-        File.open("#{path}/#{file_name}", 'w') do |f|
+        File.open("#{path}/#{bucket}/#{file_name}", 'w') do |f|
           f.write(data)
         end
       end
@@ -48,9 +48,9 @@ module Maverick
       end
     
       def list(name)
-        collection = Maverick::Collection.new
+        collection = []
         Dir.new("#{path}/#{name}").entries.reject { |e| [ "..", "." ].include? e }.each do |file|
-          collection << file
+          collection << Maverick::Object.new({ :name => file, :filename => "#{path}/#{name}/#{file}" })
         end
         collection
       end

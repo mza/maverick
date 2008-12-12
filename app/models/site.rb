@@ -18,7 +18,7 @@ class Site < ActiveRecord::Base
       self.collection = Maverick::Content.list(self.bucket_name)
     end
     p = []
-    self.collection.objects.each do |object|
+    self.collection.each do |object|
       unless options[:filter_by].blank?
         unless options[:filter_by].include? object.key
           unless object.key.match("png")
@@ -29,7 +29,7 @@ class Site < ActiveRecord::Base
         p << Post.new(object)
       end
     end
-    p 
+    p
   end
   
   def reserved_names
