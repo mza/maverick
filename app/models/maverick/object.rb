@@ -6,6 +6,13 @@ module Maverick
     def initialize(options)
       self.filename = options[:filename]
       self.name = options[:name]
+      
+      unless options[:content].nil?
+        self.content = options[:content]
+      else 
+        load_content
+      end
+        
     end
     
     def key
@@ -22,9 +29,17 @@ module Maverick
     private
     
       def load_content
-        file = File.new(self.filename)
+        begin
+          file = File.new(self.filename)
+        rescue
+          logger.debug "FILE NOT FOUND: #{self.filename}"
+          raise Maverick::FileNotFoundException, "File not found: #{self.filename}"
+        end
         self.content = file.read
       end
-    
+      
+      def logger
+        RAILS_DEFAULT_LOGGER
+      end
   end
 end

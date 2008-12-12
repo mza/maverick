@@ -44,7 +44,11 @@ module Maverick
       end
     
       def retrieve(name, bucket)
-        Maverick::Object.new({ :filename => "#{path}/#{name}" })
+        begin
+          Maverick::Object.new({ :name => name, :filename => "#{path}/#{bucket}/#{name}" })
+        rescue Maverick::FileNotFoundException
+          raise Maverick::FileNotFoundException
+        end
       end
     
       def list(name)

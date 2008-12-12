@@ -59,16 +59,16 @@ class Site < ActiveRecord::Base
   def header
     begin
       Post.new Maverick::Content.retrieve("header", self.bucket_name)
-    rescue Maverick::NoSuchKeyException
-      "HEADER"
+    rescue Maverick::FileNotFoundException, Maverick::NoSuchKeyException
+      Post.new Maverick::Object.new(:content => "")
     end
   end
   
   def footer
     begin
       Post.new Maverick::Content.retrieve("footer", self.bucket_name)
-    rescue Maverick::NoSuchKeyException
-      "FOOTER"
+    rescue Maverick::FileNotFoundException, Maverick::NoSuchKeyException
+      Post.new Maverick::Object.new(:content => "")
     end
   end
   

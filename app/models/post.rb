@@ -18,7 +18,11 @@ class Post
   end
   
   def content
-    @object.value
+    begin
+      @object.value
+    rescue Maverick::NoSuchKeyException => e 
+      raise Maverick::NoSuchKeyException, "Content not prepared. #{e}"     
+    end
   end
   
   def illustrated?

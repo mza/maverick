@@ -39,8 +39,12 @@ module ApplicationHelper
     self.working_post = post
     self.working_site = options[:for]
     self.assets = options[:assets_from]
-    unless post.prepared?
-      post.prepare_content(binding)
+    begin
+      unless post.prepared?
+        post.prepare_content(binding)
+      end
+    rescue Maverick::NoSuchKeyException => e
+      raise Maverick::NoSuchKeyException, "Failed to prepare content: #{e}"
     end
     post.prepared_content
   end
