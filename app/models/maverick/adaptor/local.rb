@@ -41,6 +41,7 @@ module Maverick
       end
     
       def retrieve(name, bucket)
+        Maverick::Object.new({ :filename => "#{path}/#{name}" })
       end
     
       def list(name)
