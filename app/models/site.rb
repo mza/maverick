@@ -71,6 +71,15 @@ class Site < ActiveRecord::Base
       Post.new Maverick::Object.new(:content => "")
     end
   end
+
+  def stylesheet
+    begin
+      Post.new Maverick::Content.retrieve("styles.css", self.bucket_name)
+    rescue Maverick::FileNotFoundException, Maverick::NoSuchKeyException
+      Post.new Maverick::Object.new(:content => "")
+    end
+  end
+
   
   def create_location
     Maverick::Content.create_location(self.bucket_name)
