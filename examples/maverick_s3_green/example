@@ -1,0 +1,3 @@
+<%= titled "Example post" %>
+This is an example post from S3, annotated with Maverisms.
+<%= dated %>

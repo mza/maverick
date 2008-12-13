@@ -1,0 +1,126 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+}
+
+img {
+	border: 0px;
+}
+
+h1 {
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+	font-size: 34px;
+	font-style: italic;
+	font-weight: normal;
+	color: #008000;
+	font-family: georgia, times, serif;
+}
+
+div.container {
+	margin: 0 auto;
+	width: 700px;
+}
+
+div#content {
+	width: 400px;
+	float: left;
+}
+
+div#posts {
+	margin-top: 40px;
+}
+
+div#sidebar {
+	width: 250px;
+	float: right;	
+}
+
+div#menu {
+	padding: 60px 15px 15px 15px;
+	margin: 0px 0px 0px 0px;	
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 4px solid #008000;
+}
+
+div#extras {
+	margin-top: 14px;
+	padding-left: 15px;
+}
+
+div#extras ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+div#extras a, div#extras a:link, div#extras a:visited {
+	color: #666;
+}
+
+div#extras a:hover {
+	color: #00AF00;	
+}
+
+div#extras li {
+	list-style: none;
+	text-transform: uppercase;
+	line-height: 21px;
+}
+
+div#title {
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+div#title strong {
+	font-weight: normal;
+	font-size: 26px;
+	color: #333;
+}
+
+div#colophon {
+	font-size: 14px;
+	color: #333;
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+
+div#author {
+	color: #666;
+}
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: #00AF00;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div.post h1 {
+	font-family: helvetica;
+	font-style: normal;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+div.post {
+	font-size: 13px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+div.date {
+	color: #666;
+	font-size: 11px;
+	text-transform: uppercase;	
+	margin-top: 15px;
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+}
