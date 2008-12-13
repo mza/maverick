@@ -1,0 +1,10 @@
+<% titled 'On The Radar' %>
+
+A good write up from <a href='http://radar.oreilly.com/archives/2007/09/report_on_barca.html'>Tim O'Reilly on the Radar</a> regarding <a href='http://www.barcamp.org/BarCamb'>Barcamb</a>:
+<blockquote>
+Ian did a great job of summarizing the talks, which I found to be a fascinating list, because of the focus on science and hardware hacking, two areas that (as you know if you read Make), are very much on our radar as an alpha geek birthing ground for the next generation of disruptive technologies.
+</blockquote>
+
+Great to see such positive feedback. I thoroughly enjoyed the day, and now that this blog is back up and running, I should really post something about it myself.
+
+<%= dated %>

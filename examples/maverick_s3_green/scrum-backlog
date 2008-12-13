@@ -1,0 +1,66 @@
+<%= titled 'Creating a product backlog' %>
+
+<p>Scrum is an iterative approach to collaboration and software development, but you&#8217;ve got to start somewhere. In this post, we outline how to create a list of new features or improvements - a <em>product backlog</em> in Scrum terminology.</p>
+<p>The Scrum framework all hangs on the product backlog - a list of features drawn up by the person (or people) who will eventually put the developed software in to use. This article guides you through how to create a product backlog in Google Documents.</p>
+<p>There are numerous ways of storing a product backlog (from pen and paper to dedicated full blown applications), but let&#8217;s start simple. An online spreadsheet is available to all with a browser, and can be viewed and edited by multiple people at once. We also get version control for free. So let&#8217;s get started.</p>
+<p><strong>Backlogs explained</strong><br /><br />
+In <a href="http://www.amazon.com/Agile-Software-Development-SCRUM-Schwaber/dp/0130676349">The Scrum Book</a>, a product backlog is defined as:</p>
+<blockquote><p>an evolving, prioritised view of business and technical functionality that needs to be developed into a system</p></blockquote>
+<p>A product backlog pulls together an ordered list of requirements which are &#8216;queued&#8217; to get rolled into the software in the future. The list can be reordered and edited as necessary, which ensures that the rapidly changing nature of research can be easily mapped to the backlog. Before each development cycle, the most important of these items are selected and implemented within a relatively short time frame.</p>
+<p>Once the product backlog has been built, a project leader can meet with the development team to decide which items will be included in the next development cycle (often referred to as a sprint).</p>
+<p><strong>What makes up a product backlog?</strong></p>
+<p>In short - stories.</p>
+<p>Stories are short vignettes describing how the project leader would like the software to operate. They are non-technical, and written from the point of view of the project. For example, if we are thinking of a patient management system, the following stories would be likely:</p>
+<blockquote><p> All patient records should be unavailable until the user&#8217;s hospital staff number and ward code have been verified.</p>
+<p>Once verified, the staff member should only be able to edit their own patient&#8217;s records.</p>
+<p>All staff should be able to look up drug names in an online pharmacopedia.</p></blockquote>
+<p>In addition to these stories, the development team may add some additional &#8216;tech stories&#8217;, which are usually more along the lines of setting up servers, or stress testing systems.</p>
+<p>Once the stories have been written, they should be ranked in order of importance by scoring each story with an &#8216;importance&#8217; value. These values don&#8217;t need to be sequential, or even within the same order of magnitude. Indeed, it may help if they are not when planning what shoud be included in the next development sprint. Ideally, all the important stories should have unique values.</p>
+<p>Looking again at our patient management example:</p>
+<blockquote><p> All patient records should be unavailable until the user&#8217;s hospital staff number and ward code have been verified. <strong>Importance: 1000</strong></p>
+<p>Once verified, the staff member should only be able to edit their own patient&#8217;s records. <strong>Importance: 500</strong></p>
+<p>All staff should be able to look up drug names in an online pharmacopedia. <strong>Importance: 10</strong></p></blockquote>
+<p>With a few more stories, we&#8217;ll have enough information to start building a prioritised short list for the sprint. Ideally, product backlogs should contain as many items as necessary - don&#8217;t stop at the number you think the developers will be able to handle within the time frame of the sprint.</p>
+<p><strong>What happens next</strong></p>
+<p>Once the project leader is happy with the backlog, they and the development team meet to create a <em>sprint backlog</em> of items to be worked on (in order of priority) by the developers.</p>
+<p><strong>During a sprint</strong></p>
+<p>Although the product backlog can be updated at any point, the items marked for development during the next sprint can not be altered once the sprint has started. This is to ensure that the developers can work unimpeded by changing scope, altered priorities and moving targets. Newly important items on the product backlog can be scheduled for the <em>next</em> sprint, but cannot be inserted into one that has already started.</p>
+<p><strong>The Spreadsheet</strong></p>
+<p>As we mentioned earlier, an online spreadsheet is a good place to start putting a backlog together. We&#8217;ll use the <a href="http://docs.google.com">Google Documents</a> spreadsheet. You&#8217;ll need a <a href="http://www.google.com/accounts">Google account</a> to sign in and get started.</p>
+<p>Once logged in, create a new Spreadsheet by clicking on New → Spreadsheet. An empty spreadsheet will open in a new window.</p>
+<p>Go ahead and create three columns, adjusting the columns as necessary.</p>
+<table border="1">
+<tr>
+<td style="padding: 5px"><strong>Name</strong></td>
+<td style="padding: 5px"><strong>Description</strong></td>
+<td style="padding: 5px"><strong>Importance</strong></td>
+</tr>
+</table>
+<p>Save the spreadsheet by going to File → Save, and then start adding some stories!</p>
+<table border="1" cellpadding="5" cellspacing="5" width="100%">
+<tr>
+<td style="padding: 5px"><strong>Name</strong></td>
+<td style="padding: 5px"><strong>Description</strong></td>
+<td style="padding: 5px"><strong>Importance</strong></td>
+</tr>
+<tr>
+<td style="padding: 5px">Staff verification</td>
+<td style="padding: 5px">All patient records should be unavailable until the user’s hospital staff number and ward code have been verified.</td>
+<td style="padding: 5px">1000</td>
+</tr>
+<tr>
+<td style="padding: 5px">Read only access</td>
+<td style="padding: 5px">Once verified, the staff member should only be able to edit their own patient’s records.</td>
+<td style="padding: 5px">500</td>
+</tr>
+<tr>
+<td style="padding: 5px">Drug name look up</td>
+<td style="padding: 5px">All staff should be able to look up drug names in an online pharmacopedia</td>
+<td style="padding: 5px">10</td>
+</tr>
+</table>
+<p>Continue until you have the makings of a fine backlog. Should others want to contribute, you can share the spreadsheet by clicking on the <em>Share</em> tab.</p>
+<p><strong>Finally</strong></p>
+<p>The product backlog is the starting point of the Scrum process, but can be kept up to date with changing needs as they occur. The next step is to meet with the development team and plan the sprint, which is the topic of another post.</p>
+
+<%= dated %>

@@ -1,0 +1,88 @@
+<%= add_page_details 'Zillionformatics' %>
+
+	<p>
+		Over at <a href='http://www.kk.org/thetechnium/'>The Technium</a>, Kevin Kelly recently posted about <a href='http://www.kk.org/thetechnium/archives/2008/04/zillionics.php'>Zillionics</a>.
+	</p>
+	<blockquote> 
+		Zillionics is a new realm, and our new home. The scale of so many moving parts require new tools, new mathematics, new mind shifts.
+	</blockquote>
+	<p>
+		The post relates to the changing scale of modern information, and the requirement of rapidly increasing the rate of capture and analysis. As Kevin notes, nowhere is this more true than in Biology:
+	</p>
+	<blockquote>
+		Zillionics is a realm much more at home in biology—where there have been zillions of genes and organisms for a long time—than in our recent manufactured world. Living systems know how to handle zillionics.  
+	</blockquote>
+	<p>
+		Whilst natural systems have long relied upon the interplay of massive networks at the cellular and sub-cellular level, the world of informatics has only really started to think in terms of <i>peta</i> and <i>exa</i> in the past 12 months.
+	</p>
+	<p>
+		To say we're playing catch up is an understatement.
+	</p>
+	<div class='callout'>
+		The time is right to start considering how informatics can evolve to handle the <i>new home</i> we find ourselves in.
+	</div>
+	<p>
+		A quick example, taken from recent experiences at <a href='http://www.sanger.ac.uk'>Sanger</a>. With the advent of new sequencing techniques from the <a href='http://www.illumina.com/'>Illumina</a> crew (and others), more bases are being sequenced than ever, increasing from 3.5Gb per week to around 200Gb per week. The entire contents of <a href='http://www.ncbi.nlm.nih.gov/Genbank/'>GenBank</a>, the repository of available sequence collected over the past 15 years, is starting to look small by comparison.
+	</p>
+	<p>
+		Talk about your paradigm shifts: clearly, as informaticians, the era of zillionics has arrived.
+	</p>
+	<p>
+	<b>Big science, big challenges (big potential)</b>
+	<br /><br />
+	The potential for scientific insight from these vast amounts of data is clear, but the challenge in collecting, curating and adding value to information on this scale is formidable. As with many aspects of life sciences, the apects of a new approach which hold the most potential also create the biggest challenges.
+	<ul>
+		<li><b>Data flow</b><br />
+			Whilst the vast scope of large scale data streams (such as those spooling from new sequencing technologies) holds value, pretty much any physical manipulation of such data is tough. Collecting, moving, mirroring, backing up and warehousing are tricky; providing reliable, reusable access to these repositories is where the scale of the problem really becomes apparent.<br /><br />
+		</li>
+		<li><b>Decentralisation</b><br />
+			In two ways: decentralisation of data production, and decentralisation of data consumption.
+			As the technology required to generate the data (be it genomic sequence, ambulatory monitoring or geotagging) becomes
+			increasingly commoditised, so the importance of providing robust approaches to collecting and pooling the information increases. The logical corollary to this is that the number of parties looking to access this pooled data also increases.
+		</li>
+	</ul>
+ 	The dawn of zillionics is truly game changing: the time is right to start considering how informatics can evolve to handle the <i>new home</i> we find ourselves in. Throwing more hardware and compute into the mix
+	will certainly help, but limited resources and straining server farms will increasingly call for solutions in the form of policy and software.
+	</p>
+	<b>Thinking beyond the shebang</b>
+	<p>
+		The approach we take towards developing scientific software can have a great deal of impact in this new era. Somewhat paradoxically, this increase in scale and complexity calls for software that is significantly more flexible and lightweight. Less, in this respect, is definitely more.
+		<ul>
+			<li><b>Less code</b><br />
+				Keeping application design simple and code structure uncluttered leads to software that is more amenable to change. Fields experiencing this explosive growth really have to exist in the moment: solving the most important problems today is more important than planning for tomorrow, when the game may well have switched up <i>again</i>. 
+				<br /><br />
+			</li>
+			<li><b>Less coupling</b><br />
+				Keeping software components and applications loosely coupled helps to keep everything agile. Swapping out an element that doesn't fit the bill whilst the information flow keeps ticking is essential. <i>"We can't change A because of B"</i> doesn't fly in the new world order.
+				<br /><br />
+			</li>
+			<li><b>Less benchmarking</b><br />
+				Finding bottlenecks in poorly performing code is important, but jumping in to a problem performance first is rarely a good move. This is doubly true when dealing
+				with data that grows in orders of magnitude, or faster. Chances are that any performance metric is going to be meaningless within 6 months as the data builds, and the domain remodels: building software and infrastructure that is
+				flexible to these growing needs is key.
+				<br /><br />
+			</li>
+			<li><b>Lower barriers to entry</b><br />
+				Providing access to the data housed by scientific software becomes critical - lightweight, simple interfaces help both humans and machines manage, analyze and curate vast datasets. 
+				<br /><br />
+			</li>
+			<li><b>Less downtime</b><br />
+				Providing services that allow others to access and build upon existing data need to be reliable and available. Simple software is easier to maintain, migrate and scale.
+				<br /><br />
+			</li>
+		</ul>
+		Keeping things simple and flexible from the outset pays out quickly, time after time in the fast paced, rapidly changing world described by zillionics.
+	</p>
+	<p>
+		<b>Expanding the network</b><br /><br />
+		Two of Kevin's other essays on this are also well worth a read: 
+		<ul>
+			<li><a href='http://www.edge.org/3rd_culture/kelly06/kelly06_index.html'>Speculations on the Future of Science</a></li>
+			<li><a href='http://www.kk.org/newrules/newrules-3.html'>Value flows from Abundance</a></li>
+		</ul>
+		For those interested in the current challenges in sequencing informatics, The Guardian has the scoop:
+		<ul>
+		<li><a href='http://www.guardian.co.uk/technology/2008/feb/28/research.computing'>Basically, DNA is a computing problem</a></li>
+	</p>
+	
+<%= dated %>

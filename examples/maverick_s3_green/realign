@@ -1,0 +1,56 @@
+<%= titled "Realign, don't reinvent" %>
+
+<p>
+	Very few domains innovate as quickly as the fast moving fields within science. Whilst this innovation ebbs and flows
+	from one discipline to the next, when it arrives, the software underpinning these fields (and the development process used to create them) needs to be as flexible
+	as possible to keep up.
+</p>
+<p>
+	Taking an iterative approach to development can help keep software on the crest of this wave. However, development can often become stuttered as the problem domain is explored. 
+	Let's consider an example, a laboratory information management app, designed to capture and store data from a wet lab process. The development team set about building the functional 
+	specification:
+	<ul>
+		<li>Database design: 2 months</li>
+		<li>Develop framework for user interface display: 2 months</li>
+		<li>Data capture module: 2 months</li>
+		<li>Instrument automation module: 3 months</li>
+		<li>Release!</li>
+	</ul>
+	The team pull on their white coats to observe the laboratory in action, spec up a database schema, and start to implement it. They pull together a nice modular framework for displaying
+	arbitrary UI elements, and move on to start working on the lab data capture. During a chance meeting in the hallway, they learn of the introduction of a new quality control step.
+</p>
+<p>
+	<b><i>Boom.</i></b>
+</p>
+<p>
+	The hard work is undone. Despite their best intentions, the team realise that the schema and UI framework aren't a good fit for QC data. The system has been growing harder to work with
+	for a while, and so they take this opportunity to work from a clean slate. They go for the nuclear option: <i>The Rewrite</i>.
+</p>
+<p>
+	<b>Realigning vs rewriting</b>
+</p>
+<div class='callout'>
+	<i>The team are always ready for the next big thing. Indeed, they are actively seeking it.</i>
+</div>
+<p>
+	In cases where the code base is insufficiently advanced or when the <a href='http://en.wikipedia.org/wiki/Code_smell'>code smells</a> particularly bad, a rewrite may appear to be a good option.
+	However, the cost is signifiant. Moreover, when the next <i>Boom</i> happens, that rewrite will be harder to swallow.
+</p>
+<p>
+	Instead of a formal specification, and scheduling long periods of development time which could be lost in the event of a <i>Boom</i>, highly innovative and dynamic fields require continual realignment and adjustment, not full scale
+	rewrites. Instead, let's consider how the team of our laboratory application put together the next version:
+	<ul>
+		<li>Meet with collaborators: 1 hour</li>
+		<li>Prioritise and estimate work: 1 hour</li>
+		<li>Starting with the highest priority, implement features and fixes: 10 days</li>
+		<li>Release!</li>
+		<li>Review progress. Rinse. Repeat. </li>
+	</ul>
+	By releasing smaller changes more frequently, and keeping an open loop with their laboratory collaborators to ensure they are spending time on adding maximum value, the team are always
+	ready for the next big thing. Indeed, with an iterative approach such as this, they are actively seeking it.
+</p>
+<p>
+	The key to reaping the benefits of iterative development is to build regular reviews and opportunities for reflection right into the development cycle. The more often
+	you pause to consider what's working for you and what's not, the more value you will add to the hot scientific fields.
+</p>
+<%= dated %>

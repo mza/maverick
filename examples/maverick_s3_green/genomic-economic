@@ -1,0 +1,13 @@
+<%= add_page_details 'Genomic economic' %>
+
+	<p>
+		A thousand dollars is largely seen as the goal of modern genomic sequencing. That's a full human genome sequenced
+		for $1000, a task that cost $500 million only 5 years ago, <a href='http://duncan.hull.name/2008/03/28/how-much-does-a-genome-cost/'>as Duncan notes</a>. 
+	</p>
+	<p>
+		Using next gen sequencing approaches (such as <a href='http://www.illumina.com/pages.ilmn?ID=204'>Illumina</a>, <a href='http://www.454.com/'>454</a> and <a href='http://solid.appliedbiosystems.com/'>ABI's SOLiD</a>), a genome currently costs around $100,000 to sequence. That said, the cost in producing, storing and analysing that sequence is much greater.
+	</p>
+	<p>
+		Give the orders-of-magnitude rate of change in this area every few years, we need to start getting ready for the $1000 genome now, with simple software development approaches that can keep up.
+	</p>
+<%= dated %>

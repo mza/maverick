@@ -1,0 +1,71 @@
+<%= titled 'Peer review for developers' %>
+
+	<p>
+		Peer review is one of the corner stones of the scientific method. Conferences, talks, journal clubs and publishing
+		all provide a forum for research to be overseen and reviewed for quality, relevance and in some cases, santity.
+		<div class='callout'>
+			a process in which a fellow developer checks out a project and provides a second opinion
+		</div>
+		Clearly, this is a <i>Good Thing</i> and has a large part to play in the longevity of
+		data, or the methods used to generate it. But what of the developers of these methods?
+
+	</p>
+	<p>
+		Peer review to ensure the longevity of informatics software is far less common, especially with code that is "only" used in-house. However,
+		it is no less relevant in a field which is rapidly moving and has high standards of quality as a prerequisite. A good approach to address
+		this is the <i>code review</i>, a process in which a fellow developer checks out a project and provides a second opinion. Quality, relevance and (in even more cases) sanity
+		are double checked.
+		<br /><br />
+		The aim is relatively simple: to ensure the code is readable (in more than just formatting) and to highlight possible bugs and security concerns.
+		<div class='callout'>
+			As important as code reviews are, they need not be large scale, formal occasions.
+		</div>
+		
+	</p>
+	<p>
+		<h1>When to review</h1>
+		<p>
+			As important as code reviews are, they need not be large scale, formal occasions. Some advocate reviewing the development approach <a href='http://blogs.msdn.com/mikhailarkhipov/archive/2004/06/12/154527.aspx'>early in the design phase</a>, whilst others prefer to address it later in the development cycle, before the code is integrated into a project. Rightly or wrongly, relatively discrete projects are common in scientific software, and so the 
+			timing of a code review may not be obvious. The important step is to bake the review in to the development cycle (if you have one), and to ensure it happens early, but before deadlines are looming. This sweet spot is hard to define, but easy to find in practice: it's the point at which the software is starting to target its specified aim, but before it enters user testing or integration.
+			<br /><br>
+			If your API or web resource is taking shape, and you've started to address the initial key aspects of functionality: that's a good time to take a step back and review what you've done so far.
+		</p>
+		<h1>How to review: introducing <code>TODO</code></h1>
+		<p>
+			A good place to start a review is with a fresh checkout from the project's source code repository: get everything initially, setup the necessary configurations and run the test suite (more on that in a minute). Assuming that everything passes, take a look at the first test file and use that to jump in to the code. 
+			<br /><br />
+			Take a look at the code, and follow any method or object definitions back to the source. Attempt to follow the flow of the application, without delving in to any 3rd party frameworks or modules. Should you find an area of the code which could do with some attention, flag it with a simple comment. For example:
+			<pre>
+# TODO: find_all has been deprecated, use find(:all) instead
+genes = Gene.find_all
+			</pre>
+			Tagging your comments with <code>TODO</code> means that your review comments can be parsed out as necessary. Many IDEs (<a href='http://www.eclipse.org/'>Eclipse</a> and <a href='http://www.jetbrains.com/idea/'>IDEA</a>, for example) will identify these tags for you, for everyone else, there is always grep. 
+			<div class='callout'>
+				you could also use the user stories for the application
+			</div>
+			Once you're happy that you've covered the necessary source, rinse and repeat with the other tests. If there is an obvious entry point to the application (a home page, for example), it may be worth taking a walk from here through a few paths. If you have them available, you could also use the <a href='http://greenisgood.co.uk/pages/show/scrum-backlog'>user stories</a> for the application.
+			<br /><br />
+			When the review is complete, check back in your comments, and let the developer know that there are some fresh things to look in to. 
+		</p>
+		<br /><br />
+		<h1>A simple aim: decreasing complexity</h1>
+		<p>
+			<a href='http://blogs.msdn.com/mswanson/articles/154460.aspx'>Mike Swanson</a> makes a good point: one of the central roles of the code review is to reduce code complexity with the aim of increasing maintainability. This leads to a reduction in hot spots for possible bugs (now and in the future), and
+			reduces the overall burden of maintenance. In the same way that early prototypes help define a domain, code reviews provide a <i>second pass</i> in which to simplify and refine an approach.
+		</p>
+		<h1>How tests help code reviews</h1>
+		<p>
+			The presence of a test suite is important for the code review process to work smoothly. For the reviewer, tests provide a good explanation of how components interact and define a good roadmap for the review, especially for those new to a code base. For the reviewee addresses any specific points raised by the review, re-running the tests is a good way to ensure that the project's functionality is still in tact.
+		</p>
+		<h1>Responsibility to the reviewee</h1>
+		<p>
+			Chances are that the original developer of the code under review has poured a reasonable amount of effort in to their project, and it's important to keep your review comments concise and constructive. If there are problems, provide a good explanation of why and make a reasonable attempt to supply an alternative. If you can reference that alternative to some additional 
+			reading, so much the better. Unless there have been severe architectural design missteps avoid sweeping criticism and instead provide guidance on what to refactor and where. Pay particular attention to complex code, or code that doesn't reach any prescribed style guidelines. 
+			<br /><br />
+			An important rule is not to change the code yourself: simply add guidance, tagging it with <code>TODO</code>.
+			<br /><br />
+			All in all: don't be a nuisance - aim to add value.
+		</p>
+	</p>
+
+<%= dated %>

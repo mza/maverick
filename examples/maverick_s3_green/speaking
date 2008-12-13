@@ -1,0 +1,11 @@
+<% add_page_details 'Speaking: RailsConf 2008' %>
+
+<p>
+	I've just heard that I'll be speaking at this year's <a href='http://www.railsconf.com'>RailsConf</a> in Portland! I've been given 45 minutes to wax lyrical on how
+	Ruby and Rails are helping us stay agile and keep up with the furious rate of change of the next generation sequencing platform at the <a href='http://www.sanger.ac.uk'>Sanger Institute</a>, during my session, <a href='http://en.oreilly.com/rails2008/public/schedule/detail/1846'>Genomes on Rails</a>.
+</p>
+<p>
+	Many thanks to the organisers of RailsConf, it's a real honour to share the same stage with the likes of <a href='http://hivelogic.com/'>Dan Benjamin</a>, 
+	<a href='http://brainspl.at'>Ezra Zygmuntowicz</a>, <a href='http://errtheblog.com/'>Chris Wanstrath</a> and <a href='http://www.37signals.com'>Ryan Singer</a>.
+</p>
+<%= dated %>

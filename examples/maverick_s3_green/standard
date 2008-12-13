@@ -1,0 +1,74 @@
+<%= titled 'Raising the Standard' %>
+
+	<p>
+		Following on from my <a href='http://localhost:3000/pages/show/a_to_z'>recent talk</a>, I got to thinking
+		about the key areas those involved in developing applications for the web should concentrate on to build
+		truly outstanding apps.
+	</p>
+	
+	<h1>Front and center</h1>
+	<div class='callout'>
+		what can <i>developers</i>
+		do to make outstanding apps for <i>fellow developers</i>?
+	</div>
+	<p>
+		Clearly, the primary goal of any application (on the web, on your desktop, on your iPhone) is to solve a problem
+		on behalf of its users. In this article, I'd like to take that as a given, and focus on the flip side: in an area of science in which
+		collaboration is virtually guaranteed, what can <i>developers</i>
+		do to make truly outstanding apps for their <i>fellow developers</i>?
+	</p>
+	<p>
+		Three things come to mind: maintenance, maintenance and maintenance. Picking up someone else's code is always a bit of a 
+		nighmare. Doubly so if that code is a 6000 line Perl script with no comments. Quadruply so if that code has fallen over
+		taking down the web site you've just had published. We've all been there, folks: <i>ouch.</i>	
+	</p>
+	<div class='callout'>
+		Reliable code makes for happy developers
+	</div>
+	
+	<p>
+		Reliable code that's easy to read, easy to update and easy to test makes for happy developers. Happy because they know where to start, happy because they know what to change, and happy that their changes will continue to work well. With that in mind, I present
+		the <b>Web Standards</b>: three levels of <i>achievement</i> aimed at bringing maintainability and reliability to web app development, and keeping a smile
+		on your team's face. Future generations will thank you too.
+	</p>
+	<h1>Bronze:</h1>
+	<ul>
+		<li><span>70% test coverage</span></li>
+		<li><span>70% documentation coverage</span></li>
+		<li><span>Validated <a href='http://jigsaw.w3.org/css-validator/'>CSS</a></span></li>
+		<li><span>Validated <a href='http://validator.w3.org/'>xHTML</a></span></li>
+	</ul>
+	
+	<h1>Silver:</h1>
+	<ul>
+		<li><span>80% test coverage</span></li>
+		<li><span>80% documentation coverage</span></li>
+		<li><span>Integration testing (via something a kin to <a href='http://wtr.rubyforge.org/'>WATIR</a> or <a href='http://www.openqa.org/selenium/'>Selenium</a>)</span></li>
+		<li><span>Automated browser testing: two platforms</span></li>
+		<li><span>Automated deployment</span></li>
+		<li><span>AJAX <a href='http://www.ajaxload.info/'>load</a> and <a href='http://script.aculo.us/'>update</a> indicators</span></li>
+		<li><span>Announcements for updates: via a blog, forum or mailing list</span></li>
+	</ul>
+	
+	<h1>Gold:</h1>
+	<ul>
+		<li><span>Over 90% test coverage</span></li>
+		<li><span>Over 90% documentation coverage</span></li>
+		<li><span>Automated browser testing: three platforms</span></li>
+		<li><span>Semantic markup: <a href='http://www.microformats.org'>microformats</a>, RSS, RDF</span></li>
+		<li><span>Accessibile, with unobtrusive javascript</span></li>
+		<li><span>Screen reader friendly</span></li>
+		<li><span>Under continuous integration</span></li>
+	</ul>	
+	<p>
+		None of these are technically difficult: a few minutes of diligence today can help save <s>hours</s>, <s>days</s>, months of anguish
+		tomorrow.
+	</p>
+	<p>
+		Most of the web apps I'm currently working on score a solid Bronze (this one being a notable exception: the templates don't validate): but I hope this will give myself and
+		others something to push for.
+	</p>
+	<p>
+		Thanks to <a href='http://www.sanger.ac.uk/Users/rd/'>Richard</a> for starting the medal meme.
+	</p>
+<%= dated %>

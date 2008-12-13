@@ -1,0 +1,18 @@
+<%= add_page_details 'Working with the Cloud' %>
+
+<p>
+	Yesterday I gave a talk to the Informatics group at the Wellcome Trust Sanger Institute that focused on using Cloud computing within a scientific domain.
+</p>
+<p>
+	<div style="width:425px;text-align:left" id="__ss_404103"><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=intothewonderfulslideshare-1210751334701168-8"/><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slideshare.net/swf/ssplayer2.swf?doc=intothewonderfulslideshare-1210751334701168-8" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;"><a href="http://www.slideshare.net/?src=embed"><img src="http://static.slideshare.net/swf/logo_embd.png" style="border:0px none;margin-bottom:-5px" alt="SlideShare"/></a> | <a href="http://www.slideshare.net/mza/into-the-wonderful?src=embed" title="View 'Into The Wonderful' on SlideShare">View</a> | <a href="http://www.slideshare.net/upload?src=embed">Upload your own</a></div></div>
+</p>
+<p>
+	The talk is less geared towards specific distributed implementations, but highlights how Cloud computing starts to become an essential tool when doing research with very large datasets. It was designed to start a conversation, which I hope it will.
+</p>
+<p>
+	Trying something a little bit new, I've also recorded a screencast of the talk, complete with a running commentary from yours truly. This was recorded offline, but gets most of the points across I think.
+</p>
+<p>
+	<b><a href='http://www.viddler.com/explore/themza/videos/2/'>View the screencast &rarr;</a></b>
+</p>
+<%= dated %>

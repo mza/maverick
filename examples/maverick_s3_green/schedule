@@ -1,0 +1,19 @@
+<%= titled 'RailsConf 2008: Scheduled' %>
+
+<p>
+	The full schedule for this year's <a href='http://en.oreilly.com/rails2008/public/content/home'>RailsConf</a> has just been <a href='http://en.oreilly.com/rails2008/public/schedule/grid'>posted online</a>.
+</p>
+<p>
+	Some highlights form this year's line up that I'll certainly be attending:
+	<ul>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/1859'>Design Patterns in Ruby</a>, Neal Ford (and indeed, all other talks from Thoughtworks people)</li>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/2019'>UI Design on Rails</a>, Ryan Singer</li>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/1755'>Advanced RESTful Rails</a>, Ben Scofield</li>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/2094'>Small Things, Loosely Joined and Written Fast</a>, Justin Gehtland</li>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/2032'>Advanced Active Record Techniques</a>, Chad Pytel (clash city with <a href='http://en.oreilly.com/rails2008/public/schedule/detail/2114'>ActiveRecord Associations and the Proxy Pattern</a>)</li>		
+	</ul>
+</p>
+<p>
+	And, of course, pencil in 11.45 on Sunday 1st June for my talk, <a href='http://en.oreilly.com/rails2008/public/schedule/detail/1846'>Genomes on Rails</a>. In fact, forget the pencil, you can go right ahead and commit yourself in ink. <code>: )</code>
+</p>
+<%= dated %>

@@ -1,0 +1,32 @@
+<%= titled 'Checking out' %>
+
+<p>
+	The actual implementation of a solution in code is only one step toward solving a problem, and is part of a larger development pipeline. 
+	<ul>
+		<li><b>Design</b><br />Putting together a map of a particular problem, and planning out a possible solution. This can happen quickly (fixing an obvious edge case bug, for example), or require more time (schema design and wide architectural refactorings both springing to mind).<br /><br /></li>	
+		<li><b>Implementation</b><br />Putting fingers to keyboards to implement the plan<br /><br /></li>
+		<li><b>Quality control</b><br />Checking that the solution solves the original problem in an expected, reliable way<br /><br /></li>
+		<li><b>Sign off</b><br />An end point - the problem is solved and ready to be used in the trenches</li>
+	</ul>
+</p>
+<p>
+	Classically, a developer will spend the majority of their time implementing, but exercising the other sides of the square should be encouraged. Simple checklists can provide a good guide to make sure the key pieces are put in place, making the next stage (and all forthcoming problems) easier.
+<p>
+<p>
+	A quick example. A ticket has been opened indicating that a column sort is failing. We've got a pretty good idea of where the problem lies and add a simple test to capture the errant behaviour. Sure enough, the test fails. We fix up the problem so that the new test passes. We're now ready to sign off our work - here is our checklist:
+	<ul>
+		<li>1. Run the full test suite</li>
+		<li>2. Commit the changes back to Subversion</li>
+		<li>3. Tag the code with the build or release number</li>
+		<li>4. Release the update</li>
+		<li>5. Post an update to the appropriate mailing list or blog</li>
+	</ul>
+	These simple steps can be considered a 'proof read' before going to print, resulting in a better read all round.
+</p>
+<p>
+	Compiling checklists also provides an excellent starting point when looking to automate development processes since the particularly repetitive and important bits have already been identified, prioritised and ordered.
+</p>
+<p>
+	 After that, a simple <code>rake</code> task should take care of things, time after time.
+</p>
+<%= dated %>

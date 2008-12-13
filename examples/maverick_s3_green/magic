@@ -1,0 +1,15 @@
+<%= titled 'Just like magic' %>
+
+Steven Frank posts an <a href='http://stevenf.com/2007/09/bugs_are_magic_tricks.php'>interesting connection between programming bugs and magic tricks</a>, taking in 
+Darren Brown, reverse engineering and the impossible.
+
+<blockquote> 
+Bugs thrive on the same human brain deficiencies that earn magicians their living. We are shown something that is apparently impossible -- but the reality is that we just don't have all the information.
+</blockquote>
+
+Totally true: and like magic tricks, when you know what the problem is, bugs seem incredibly obvious.
+<br /><br />
+<i>An aside:</i> Much like <a href='htpt://greenisgood.co.uk'>Green is Good</a>, Steven also recently swapped out
+Moveable Type for a <a href='http://stevenf.com/2007/08/just_about_done_here.php'>custom blogging engine</a> more to his suiting. 
+
+<%= dated %>

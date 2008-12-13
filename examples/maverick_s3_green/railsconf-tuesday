@@ -1,0 +1,17 @@
+<%= titled 'RailsConf Europe: Tuesday' %>
+
+RailsConf is in full swing here in Berlin. <a href='http://www.loudthinking.com'>David Heinemeier Hansson</a> gave the keynote
+address this morning, focusing on some of the extra syntactic sugar to be found in Rails 2.0, the first preview release of which
+should make an appearance online over the next few days.
+<br /><br />
+Some good stuff in there: namespaced controllers, HTTP basic authentication and an extension of the <code>responds_to</code> block which 
+now separates out the mime type from the renderer. This could mean some migration troubles for some (templates are now named <code>index.html.erb</code>, for example), but the
+additional flexibility of customising responses by type seems worth it. DHH shows a demo that added a custom response type for the iPhone, for example.
+<br /><br />
+Moreover, David advocated a much more mature approach to Rails evangelism: after three years, the doors to Rails are now well and truly open. Many of the original stumbling blocks
+have been removed (<code>script/server</code> couldn't be easier, for example), which means that we should now be able to ease off on the schtick, and allow the framework to attract
+users on it's own merits. Existing Rails developers also get back and start enjoying the framework, instead of non-stop
+evangelism.
+<br /><br />
+<a href='http://www.apple.com/uk/iphone/'>And speaking of peripherals...</a>
+<%= dated %>

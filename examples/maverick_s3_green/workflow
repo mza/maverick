@@ -1,0 +1,94 @@
+<%= titled 'Work flow' %>
+or <b>Whither the daily stand up meeting?</b>
+
+<p>
+	<div class='callout'>
+		<i>Sometimes elegant,
+		but angular when necessary</i>
+	</div>
+	Despite its underpinnings of cold, hard logic, software development is a very creative process. I've often
+	compared it to sculpture: a multi-dimensional canvas on which beautiful designs are etched. Sometimes elegant,
+	but angular when necessary, code takes shape early on, and is continually reformed depending on the environment
+	around it. Development requires that the author can hold the final form in mind whilst building structures
+	to support, and decorate the final product.
+</p>
+<p>
+	It's also skillful, technical, and a lot of people don't get it.
+</p>
+<p>
+	Dave Thomas touched on this in his 2007 RailsConf keynote. With this in mind, it's not a stretch to think that great development, like great art, require a certain mental state.
+	This has been referred to as 'flow', and I think it breaks down in to three steps:
+	<ul>
+		<li><b>The Load</b><br />
+			A mental 'load' of the state of a project and the problem to be solved; this can also include opening up a development environment,
+		running tests, pulling down the latest updates.<br /><br /></li>
+		<li><b>The Flow</b><br />The actual act of doing work: adding functionality, running down bugs, refactoring and testing where necessary.<br /><br /></li>
+		<li><b>The Commit</b><br /> Often accompanied by a version control <code>commit</code>, this is a commitment that the task
+		is complete. Job done.<br /><br /></li>
+	</ul>
+</p>
+<p>
+	Most people who have worked with software have probably experiences these steps, and keeping then in mind when
+	working within a software development team is key. 
+	<div class='callout'>
+		<i>at worst, you end up in a perpetual state of 'almost-Flow'</i>
+	</div>
+	The goal is not to get from Load to Commit in as short a time as possible,
+	but to ensure that the state of Flow (where the actual work gets done) can be achieved and maintained for as long as possible.
+</p>
+<p>
+	At best, breaking the Flow can bounce you right back up to the Load; at worst, you end up in a perpetual state of <i>almost flow</i>, neither achieving nor failing at any real rate.
+</p>
+<b>What can be done to keep things fluid?</b>
+<p>
+	<div class='callout'>
+		<i>the key to promoting this is to remove interruption</i>
+	</div>
+	The first thing is to make the Load as painless as possible: a stable development environment and some level of automatically setting up the necessary services to get going pay dividends throughout
+	the development process, but help in getting up and running quickly. Tracking tickets can also help identify what to work on next. Once full Loaded, work can begin: a developer in Flow can be
+	hugely productive, the key to promoting this is to remove <i>interruption</i>.
+	
+	<ul>
+		<li>
+			<b>Remove interruption, not communication</b><br />
+			Communication within a team is essential, especially when working on a large project. Interruptions though, can break flow, and so should be removed where possible. <br /><br />We're talking about 
+			non-essential tasks being thrust into a developers psyche: the telephone calls, the 'hey-look-at-this' moments, fire fighting technical problems, unnecessary requests for updates, difficult deployments. The list goes on. Project leaders also need to be kept in check: in dev teams, MBWA
+			can be especially damaging.
+			<br /><br />
+		</li>
+		
+		<li>
+			<b>Solitude isn't the answer</b><br />
+			Some solve this problem by separating developers into cubicles or offices. In my opinion, this does little to remove interruption, and only serves to create artificial boundaries at times when collaboration would be beneficial. A peaceful, distraction free workspace is essential, but solitude is not the answer.
+			<br /><br />
+			A case in point: you see those guys with laptops on the train or at a noisy airport: you can spot the ones in Flow; they are practically glowing. The same is true of XP-style pair programming: two developers can tune in to Flow together, so long as they are not disturbed with non-dev tasks.
+			<br /><br />
+		</li>
+	</ul>
+</p>
+<b>Flow and the stand up meeting</b>
+<p>
+	<div class='callout'>
+		<i>in general, a productive developer is a happy developer</i>
+	</div>
+	In a Scrum team, there is collective ownership of code, and a project's momentum is maintained by regularly 'checking in' with the rest of the team to identify roadblocks and possible points of
+	collaboration. This usually happens in a short, 'stand up' meeting (<a href='http://www.greenisgood.co.uk/pages/show/introduction_to_scrum'>more details</a>). Our Scrum stand up meetings have proved useful, however, keeping the importance of Flow in mind,
+	it's clear that they could be having a negative impact.
+</p>
+<p>
+	A case study: at <a href='http://www.sanger.ac.uk'>Sanger</a>, we hold our daily stand up meeting in the morning, at 9.30. We gather around a desk and talk over progress and problems for 10 minutes each morning, before going back to work. 
+	Although useful, we noticed that these meetings would slip later in to the day, sometimes not happening at all. This could be put down to a lack of discipline on our part, but with Flow in mind, it became clear that even a short meeting
+	was interrupting Flow. Rather then settling in to the task at hand, developers would be required to break from their current task and 'Load' for the meeting, 'Commit' after it, and then swap back to the task at hand.
+</p>
+<p>
+	This isn't an indictment of the Scrum approach: one of the benefits is that it provides space for reflection at the end of a sprint. This time should be used to highlight what's working
+	and what's not working within the framework, and has given us room to start thinking about alternatives.
+</p>
+<p>
+	We're going to be trying a few different things in the coming months to try and combat these problems, and feed our experiences back on this blog.
+</p>
+<b>The end point</b>
+<p>
+	In general, a productive developer is a happy developer, and creating an environment where flow can be easily achieved and sustained can go a long way to help that. 
+</p>
+<%= dated %>

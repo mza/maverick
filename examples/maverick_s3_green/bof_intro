@@ -1,0 +1,15 @@
+<%= titled 'Science 2.0 at RailsConf' %>
+
+<p>
+	Calling all scientists! I'm organising a Birds of a Feather session at this year's <a href='http://www.railsconf.com'>RailsConf</a>.
+	<blockquote>
+		All those using Rails in the scientific domain are invited to join a discussion of how Rails, Ruby and other Web 2.0 technologies are helping fuel scientific innovation. From analysis and information management, to communication and collaboration: what else can we do to move things forward in bioinformatics, genomics, astrophysics, etc?
+	</blockquote>
+</p>
+<p>
+	Not sure on the where or the when yet: keep your eyes out for a poster on the BoF board on Level 1 of the conference. I'll also be posting updates from the conference here, and on <a href='http://www.twitter.com/mza'>Twitter</a>.
+</p>
+<p>
+	Thanks to <a href='http://www.dictybase.org'>Siddhartha</a> for the impetus. <i>See you in Portland.</i>
+</p>
+<%= dated %>

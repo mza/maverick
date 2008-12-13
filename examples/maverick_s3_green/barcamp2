@@ -1,0 +1,21 @@
+<%= titled 'Barcamp Cambridge 2' %>
+
+<p>
+	Last year, about 30 scientists and tech folks got together on the <a href='http://www.sanger.ac.uk'>Wellcome Trust Genome Campus</a>
+	at the first Barcamp in Cambridge. The whole day was a great success, so I think we should do it again.
+</p>
+<p>
+	<b>One and all are invited to a day of talks, demos and discussions at <a href='http://barcamp.org/BarCamb-2'>Barcamb 2</a>, on Friday 1st August, 2008
+	at the Wellcome Trust Genome Campus</b>
+</p>
+<p>
+	The <a href='http://www.barcamp.org'>Barcamp</a> concept is simple: there is no predetermined schedule or invited speakers, only a collection of
+	awesome people ready to participate and contribute. Last year, we had a wide range of talks and demos from some excellent speakers.
+	I think everyone enjoyed the day last year: we had some great feedback, including a word or two from <a href='http://radar.oreilly.com/archives/2007/09/report-on-barcamp-cambridge-uk.html'>Tim O'Reilly</a>
+	based on <a href='http://blogs.nature.com/wp/nascent/2007/08/barcamb_cambridge.html'>Ian's excellent coverage</a>. There are some <a href='http://flickr.com/search/?q=barcamb&w=all'>photos up on Flickr,</a> too.
+</p>
+<p>
+	For more details, check out the <a href='http://barcamp.org/BarCamb-2'>wiki</a>, follow <a href='http://twitter.com/barcamb'>barcamb</a> on Twitter, or sign up at <a href='http://upcoming.yahoo.com/event/473579/'>Upcoming.org</a>.
+	<i>See you in August!</i>
+</p>
+<%= dated %>

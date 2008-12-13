@@ -1,0 +1,11 @@
+<%= add_page_details 'Loosely Coupled' %>
+
+<p>
+I often come across interesting <i>stuff</i> on the web which is worth highlighting, and so 
+today I'm add a linked list to the site: <a href='http://greenisgood.tumblr.com'>Loosely Coupled</a>.
+</p>
+<p>
+There is a link up there in the top right of each page; those following along via RSS can grab the 
+separate feed here: <a href='http://greenisgood.tumblr.com/rss'>http://greenisgood.tumblr.com/rss</a>
+</p>
+<%= dated %>

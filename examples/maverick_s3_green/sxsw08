@@ -1,0 +1,15 @@
+<%= titled 'Sci by Southwest' %>
+
+<p>
+	I'm packing up my laptop, cowboy hat and steak knives to head out to Austin for this year's <a href='http://www.sxsw.com'>SXSW Interactive festival</a> tomorrow, which should be a blast.
+</p>
+<p>
+	SXSW is really a very unique experience: it's pretty much the only conference in which interactive designers, hardcore tech folk, and the ideas guys gather together to swap stories from the
+	trenches. A unique mix of cutting edge tech talks, retrospectives and Next Big Things, I'm always surprised that it doesn't attract more scientists or informaticians, after all, interaction, 
+	scalability and innovation are our currency. Perhaps it's the lack of academic rigor (replaced with a very Web++ '<a href='http://radar.oreilly.com/archives/2007/09/followup-on-semantic-web-appro.html'>hey, this worked for me, want to try it</a>'), or an attendance list (replaced with an online
+	directory and an <a href='http://2008.sxsw.com/interactive/evening_events/'>after party sponsored by Facebook</a>), but I always return buzzing with new ideas and approaches, which is worth the entry price alone.
+</p>
+<p>
+	So - if anyone else is attending and fancies a taco (or a <a href='http://greenisgood.co.uk/pages/show/introduction_to_scrum'>SXSW-Scrum-style-daily-stand-up?</a>), <a href='mailto:matt.wood@sanger.ac.uk'>drop me a line</a>.
+</p>
+<%= dated %>

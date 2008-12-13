@@ -1,0 +1,7 @@
+<%= titled 'See you in Berlin' %>
+
+I'll be flying out to <a href='http://www.railsconfeurope.com/'>RailsConf Europe</a> in Berlin on Saturday. Very much looking forward to it.
+<br /><br />
+If anyone else if going, give me a shout and maybe we can grab some <a href='http://www.bratwurst-on-rails.com/'>bratwurst</a> before the event.
+
+<%= dated %>

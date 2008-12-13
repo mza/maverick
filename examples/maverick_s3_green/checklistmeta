@@ -1,0 +1,16 @@
+<%= add_page_details 'Very meta: checklist checklist' %>
+
+<p>
+	<a href='http://www.greenisgood.co.uk/pages/show/checklist'>Simple checklists</a> can be a great way to organise development tasks and prepare for automation. 
+</p>
+<p>
+	But what makes up a good checklist?
+	<ul>
+		<li>1. Keep it simple: the more complex, the less likely it will require to follow and the less likely it is to stick.</li>
+		<li>2. No more than 5 items</li>
+		<li>3. Keep it flexible: bump less important items as necessary</li>
+		<li>4. Merge related items into automated, single list items</li>
+		<li>5. Share it: chances are that others can benefit too</li>
+	</ul>
+</p>
+<%= dated %>

@@ -1,0 +1,11 @@
+<%= titled 'Scrum for Project Leaders' %>
+
+<p>To make Scrum work, it requires buy-in from the various project leaders a software development team might work with.</p>
+<p>I recently gave a small lunch time talk here at the <a href="http://www.sanger.ac.uk/">Wellcome Trust Sanger Institute</a> to project leaders who work with the production software team to explain the benefits of the Scrum approach, and what it meant for them going forward. My slides are here.<br />
+<br />
+<object type="application/x-shockwave-flash" data="http://s3.amazonaws.com/slideshare/ssplayer.swf?id=79245&doc=introduction-to-scrum3310" width="425" height="348"><param name="movie" value="http://s3.amazonaws.com/slideshare/ssplayer.swf?id=79245&doc=introduction-to-scrum3310" /></object>
+</p>
+<p>The talk went well - with all the project leaders present agreeing to give it a try. One of Scrum&#8217;s major advantages when seeking support (over more general &#8216;agile&#8217; approaches, even) is that every aspect can be time boxed. If Scrum fails for some reason, the relatively short development sprint means that the actual cost of the failure is low.</p>
+<p><a href="http://www.tompeters.com" title="Tom Peters" target="_blank">Tom Peters</a> may disagree with me, but when developing mission critical software, reduced risk is a good thing.</p>
+<i>Update:</i> fixed the broken slideshare viewer.
+<%= dated %>

@@ -1,0 +1,14 @@
+<%= titled 'RailsConf Europe: Keynote' %>
+
+RailsConf kicked of, like, for reals here in Berlin this evening, with an excellent keynote from Dave Thomas. 
+<br /><br />
+Dave spoke about the art of software engineering (and the engineering of software art), and made a plea for developers to start
+building beautiful apps. Hear hear.
+<br /><br />
+Personally, I've often felt that development work was not unlike sculpture: it requires a focus on tiny details whilst maintaining an 
+appreciation of the <i>thing</i> as a whole. Dave Thomas compared it to various other artistic pursuits: poetry, writing, painting, focusing
+on what developers can learn. Modular design, rapid prototyping, giving the client what they need: there is nothing you can't throw at the metaphor.
+<br /><br />
+One final point really stood out: that developers should sign our work as an artist would a painting: I'm definitely going to be promoting this on my return to the lab. Not only does this fits nicely in to the humane approach advocated by Kathy Sierra and 
+Aza Raskin, but it also encourages developers to take ownership, nay, pride in their work. Fantastic.
+<%= dated %>

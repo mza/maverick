@@ -1,0 +1,21 @@
+<%= titled 'What Can Bioinformaticians Learn from YouTube?' %>
+
+I gave a talk at the <a href='http://www.sanger.ac.uk'>Wellcome Trust Sanger Institute's</a> weekly Informatics group meeting today, on the 
+subject of:<br /><br />
+
+<div style="width:425px;text-align:left" id="__ss_156920">
+	<object style="margin:0px" width="425" height="355">
+		<param name="movie" value="http://s3.amazonaws.com/slideshare/ssplayer2.swf?doc=what-can-bioinformaticians-learn-from-youtube-1194351542661140-4"/>
+		<param name="allowFullScreen" value="true"/>
+		<param name="allowScriptAccess" value="always"/>
+		<embed src="http://s3.amazonaws.com/slideshare/ssplayer2.swf?doc=what-can-bioinformaticians-learn-from-youtube-1194351542661140-4" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed>
+	</object>
+</div>
+<br /><br />
+The talk is largely inspired by Carole Goble's BOSC keynote, <a href='http://www.slideshare.net/dullhunk/the-seven-deadly-sins-of-bioinformatics/'>The Seven Deadly Sins of Bioinformatics</a>, and touches on 
+the differences in publishing and reusing data found in <a href='http://www.youtube.com'>YouTube</a> and commonly used Bioinformatics tools.
+<br /><br />
+We're planning on writing this up as a paper, but in the mean time, you can <a href='http://www.slideshare.net/mza/what-can-bioinformaticians-learn-from-youtube'>download the slides here</a>.
+By the by, <a href='http://www.slideshare.net'>Slideshare</a> is also an excellent example of the sort of data, code and service resuse that we could do with more of in scientific software.
+
+<%= dated %>

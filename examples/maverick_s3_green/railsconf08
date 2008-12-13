@@ -1,0 +1,24 @@
+<%= add_page_details 'Portland bound' %>
+
+<p>
+	After a busy week, I'm preparing to head off to Portland, Oregan for this year's RailsConf. Myself and a few colleagues from 
+	the software teams at the <a href='http://www.sanger.ac.uk'>Wellcome Trust Sanger Institute</a> will be flying out on Wednesday, ready to get started on Thursday morning.
+</p>
+<p>
+	With the full line up published, here are some of the sessions that have piqued my interest. 
+	<ul>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/1883'>Faster, Better, ORM with DataMapper</a> by Yehuda Katz</li>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/1859'>"Design Patterns" in Ruby</a> by Neal Ford</li>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/2112'>Fast, Sexy, and Svelte: Our Kind of Rails Testing</a> by Dan Manges and Zak Tamsen</li>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/2094'>Small Things, Loosely Joined and Written Fast</a> by Justin Gehtland</li>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/2022'>Skynet - A Ruby Map/Reduce Framework</a> by Adam Pisoni</li>
+		<li><a href='http://en.oreilly.com/rails2008/public/schedule/detail/896'>CRUD doesn't have an 'S' in it: Managing complex searching in Rails</a> by Stephen Midgley</li>		
+	</ul>
+</p>
+<p>
+	I'll be there <a href='http://en.oreilly.com/rails2008/public/schedule/detail/1846'>speaking</a> about how we're using Ruby and Rails as part of Sanger's new sequencing platform, too. If you're attending, feel free to drop by and say hello.
+</p>
+<p>
+	With an excellent line up, along with some great keynote speakers, this year's conference promises to be engaging and enlightening. Looking forward to it.
+</p>
+<%= dated %>

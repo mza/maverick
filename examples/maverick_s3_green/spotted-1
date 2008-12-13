@@ -1,0 +1,10 @@
+<%= add_page_details 'RailsConf: Stalking the Core team' %>
+
+<ul>
+	<i>Marcel Molina (noradio)</i> spotted eating breakfast in the Maritim Hotel, Friedrichstra&beta;e, possibly with <i>Nicholas Seckar (ulysses)</i>.
+</ul>
+Beautiful day here in Berlin: off out to do some sightseeing before things kick off with the conference tomorrow with a day of workshops. I'm signed up for <a href='A Half-day of Behavior-driven Development on Rails'>'A Half-day of Behavior-driven Development on Rails'</a> and <a href='http://www.railsconfeurope.com/cs/railseurope2007/view/e_sess/14267'>Scaling a Rails Application from the Bottom Up in Europe</a>. 
+<br /><br />
+I'm particularly interested to see what the <a href='http://www.joyent.com'>Joyent</a> CEO has to say about scaling Rails. At the Sanger Institute, we're currently scaling up our sequencing pipeline to support new sequencing instruments from <a href='http://www.illumina.com/'>Illumina</a> and <a href='http://454.com'>454</a>. These things are real data behemoths - ensuring 24/7 high throughput at the multi-petabyte level is a major challenge. 
+<br /><br /><a href='http://rubyonrails.org/core'>More on the Core Team &rarr;</a>
+<%= dated %>

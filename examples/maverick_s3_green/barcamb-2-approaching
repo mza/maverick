@@ -1,0 +1,22 @@
+<%= add_page_details 'Barcamp Cambridge 2 approaches' %>
+
+	<p>
+		<img src='http://barcamp.org/f/barcamb-logo-small.png' width='400' height='121' alt='Barcamp Cambridge 2'>
+	</p>
+	<p>
+		The second Barcamp to take place in Cambridge is fast approaching! All are welcome to attend, contribute and discuss topics at the interface of science and technology at <a href='http://barcamp.org/BarCamb-2'>Barcamb 2</a>.
+	</p>
+	<p>
+		The timings are in place, the rooms are booked, the refreshments have been ordered and a few early talk suggestions have been posted to the wiki. Those planning to attend are welcome to add their own before the day.
+	</p>
+	<p>
+		As with last year, we'll kick things off with breakfast at the Genome Campus, before introducing ourselves with a classic Barcamp 3-word introduction. The schedule for the day will be put up on our trusty whiteboard: and away we go. One of the
+		most exciting things about a Barcamp is the unexpected meetings and associations that spring up over the course of the day: fresh ideas, fresh perspectives, fresh approaches.
+	</p>
+	<p>
+		Very much looking forward to it.
+	</p>
+	<p>
+		More details on the <a href='http://barcamp.org/BarCamb-2'>wiki</a>. Sign up for free at <a href='http://upcoming.yahoo.com/event/473579/'>Upcoming</a>. Follow <a href='http://twitter.com/barcamb'>barcamb</a> on Twitter.
+	</p>
+<%= dated %>

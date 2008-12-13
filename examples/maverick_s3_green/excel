@@ -1,0 +1,40 @@
+<%= add_page_details 'Fl-excel-ibility' %>
+
+	<p>
+		<div class='callout'>
+			Excel is not fast, it's not particularly easy to learn or use.
+		</div>
+		Despite best efforts, scientific software often has to deal with a dazzling array of different file types, however, few are ubiquitous across science as the Excel spreadsheet.
+		Whether it's project planning or report building, Excel spreadsheets are often the first port of call for bench scientists looking to store and share all kinds of scientific information.
+	</p>
+	<p>
+		As software developers, a single question is obvious: <i>why?</i>
+	</p>
+	 	Excel is not fast, it's not particularly easy to learn or use. It's labour intensive to get data in and out,
+		major incompatibilities exist between versions and sharing up to date information is a pain. 
+		At first glance this seems to fly in the face of many of the central tenets of scientific software: openness, compatibility, ease of use, and real-time performance.
+	</p>
+	<p>
+		The key is <b>flexibility</b>, which gives Excel the (almost unique) ability to keep pace with the rate of change in scientific fields.
+		<ul> 
+		<li><b>Instant feedback</b><br />
+		Updates to data and their layout are realised immediately.<br /><br /></li>
+		<li><b>Flexible modeling</b><br />
+		Fields of a modeled domain can be manipulated in a few clicks. Entirely new attributes and "models" are quick and easy to add.<br /><br /></li>
+		<li><b>No penalty to change<br /></b>
+		Making these changes is not only possible, it is positively encouraged, thanks to undo, versioning and autosaving.<br /><br /></li>
+		<li><b>Extensible</b><br />
+		Functions and macros allow additional value to be added to data quickly.
+		</li>
+		</ul>
+	</p>
+	<p>
+		<div class='callout'>
+			We should be proclaiming our love for them
+		</div>
+		The baked-in flexibility of a spreadsheet provides a very quick, iterative approach to data design and analysis, with the added benefit that you can print out those numbers and scribble on them. Scientists love to scribble.
+	<p>
+		For those working on 'real' software, it might be easy to bite our thumbs at spreadsheets and their creators;
+		instead we should be proclaiming our love for them, and keep their patterns for rapid change at the front of our minds.
+	</p>
+<%= dated %>

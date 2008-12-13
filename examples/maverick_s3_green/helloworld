@@ -1,0 +1,9 @@
+<%= titled 'Hello, world' %>
+
+<p>Let&#8217;s talk about science and software.</p>
+<p>Modern scientific research is innovative, fast moving and fun. It favours the quick exploration of ideas, intuitive collaborations and practical, reusable techniques. We believe that software should promote these features too, and this blog aims to introduce, discuss and report on techniques to help make scientific software better.</p>
+<p>The authors of this blog are part of the sequencing informatics teams at the <a href="http://www.sanger.ac.uk/">Wellcome Trust Sanger Institute</a>. We aim to deliver high quality software tools to support the various genomic projects taking place at the Institute and with our collaborators worldwide. Through posts on this blog, we hope to introduce modern software development concepts which we think are essential to modern scientific software design and development.</p>
+<p>The speed of these innovations, collaborations and explorations is increasing nearly as quickly as information is flowing from such projects. We think that scalable, reliable software can lead the way in promoting these light speed changes.</p>
+<p>We hope you can join us.</p>
+
+<%= dated %>

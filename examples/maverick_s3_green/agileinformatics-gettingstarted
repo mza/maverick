@@ -1,0 +1,63 @@
+<%= titled 'Agile informatics: Getting started' %>
+
+<p>
+Let's consider a common situation in bioinformatics: You're handed a text file from a collaborator: <code>annotation.txt</code>. As usual, the file isn't in a common format, and you want to grab some data from it for inclusion in an upcoming paper. The solution is straight foward enough: write a script that parses the file and spits out the required data to the terminal, or another file.
+</p>
+<p>
+Piece of cake. You put together a Perl script and get the data out by lunch time. Later that month, you need to get at some additional data in the text file, so you rework your script, export the data, and go about submitting your paper.
+</p>
+<p>
+	Some time passes.
+</p>
+<p>
+The reviews of your paper eventually come back: Reviewer 1 loved it, but Reviewer 2 would like clarification on some results that rely on <code>annotation.txt</code>. You grab the script to parse the file one more time and it fails.
+</p>
+<p>
+<b>Why, where, who, what?</b>
+<br /><br />
+Three things are now certain: it was working; it's not now; you're going to have to fix it before replying to the editor.
+<br /><br />
+Ouch.
+</p>
+<p>
+	So you go back through your script: to unfamiliar regular expressions that made sense at the time, echoing variables to remind you of what represents what, reworking things that look wrong, fixing bugs, reordering the code...
+	<br ><br />
+	<b>STOP</b>. Step away from the keyboard. This is lunacy.
+</p>
+<p>
+	You're experiencing a common problem: I call it <i>The Fall Back</i>. Instead of writing a response to the editor with new supporting data, you've fallen backwards in time, direction, concentration and motivation, in to resurrecting a trivial script. 
+	<br /><br />
+	In the best case, the fix will be obvious, at worst, you won't find the problem and a rewritten script will produce different results. This has caught me out (along with many talented colleagues) in the past. The solution helps you to step forward, and to keep moving forward without retreading old ground. With only a few simple changes, we can avoid The Fall altogether, write less code, and return our focus to innovation and problem solving.
+</p>
+<h1>Stepping forwards</h1>
+<p>
+	Ideally we'd like to make sure that we never fall backwards. It's disheartening, for a start. Moreover, it breaks up the natural flow of our ideas, and puts us under even greater time pressures: with the speed at which scientific research moves, this can be catastrophic.
+	<br /><br />
+	When developing software to support research, we need to make sure that that software is as flexible and maintainable as possible, rather than the rate determining step.
+</p>
+<p>
+	<b>Where to start</b>
+	<br /><br />
+	A simple set of guidelines can help us step forward.
+	<ul>
+	<li>
+		Pillar 1: <i>Manage your source code</i><br />
+		Version control helps keep code up to date, in sync and available. It acts rather like a librarian: checking in new and updated source code, and checking out entire projects on demand. <br /><br />
+		When code is placed under version control, it is possible to monitor and track changes, allowing you to roll back to previous versions if necessary, and identify key changes in the code base. If you're planning on sharing your code with others, 
+		all potential users can grab a copy of your code from the repository, each of which can be kept up to date with your central changes. The code base can also be modified by multiple people at the same time.
+		<br /><br />
+	</li>
+	<li>
+		Pillar 2: <i>Test, test, test</i><br />
+		Without doubt the best way to avoid the Fall Back is through unit testing. In short, in addition to the script that does the heavy lifting, we also write another program, which tests that the heavy lifting is done correctly. This may sound like extra work, but
+		in practice it soon becomes second nature.<br /><br />
+	</li>
+	<li>
+		Pillar 3: <i>Automate repetitive tasks</i><br />
+		Repetitive tasks are simply a pain when they have to be performed manually. Common tasks like making sure a file is in the correct directory, or bundling up an application for deployment can be simply streamlined and performed with a single command. This ensures
+		that they are done right each and every time, without the worry that a vital step could be forgotten.
+	</li>
+	</ul>
+	In the forthcoming weeks, we'll look at these three pillars in depth. Each one requires only a few changes to the way we develop code, but brings with it a huge benefit, and a reduced risk of The Fall Back.
+	
+<%= dated %>

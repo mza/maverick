@@ -1,0 +1,8 @@
+<%= titled 'RailsConf Europe: Day 1' %>
+
+<ul>
+	<li>Spotted! <i>David Black</i> chatting to people in the very long registration queue.</li>
+	<li>Spotted! <i>Chad Fowler</i> chatting to David Black and getting ready for his charity workshop on testing with Ruby and Rails</li>
+</ul>
+Behaviour-driven design is in full swing.
+<%= dated %>

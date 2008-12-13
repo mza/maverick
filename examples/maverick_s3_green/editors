@@ -1,0 +1,31 @@
+<%= titled 'Software Editors' %>
+<b>Or: Why the iPhone is perfect</b>
+
+	<p>
+		<a href='http://www.37signals.com'>37 Signals</a> recently <a href='http://www.37signals.com/svn/archives2/eureka_were_editors.php'>blogged</a> about the importance of having an 'editor' in the software
+		development process:
+		<blockquote>
+It’s not about designing or writing or coding, it’s about trimming those weeds back before they ruin the lawn.
+		</blockquote>
+		<p>
+			I think this is spot on, especially for scientific software. It's all too easy when developing an app to 
+			find an elegant solution to a problem, but to keep drilling down the 'what if' list in an attempt to cover every edge case.
+			The result is often a dilution of that elegant solution: with more code, more potential bugs and a 
+			greater maintenance overhead.
+		</p>
+		<p>
+			Having a voice (even if it's your own), that is constantly requiring you to cut features, refactor and refine approaches
+			is one of the best things that can happen to an app. The legendary <a href='http://en.wikipedia.org/wiki/The_Mythical_Man-Month'>Mythical Man Month</a> talks about being willing to "throw 
+			the first one away" when it comes to early prototypes, but the same is true at all points in the development cycle. Cutting down on the features frees you up to perfect the core competency of your app.
+		</p>
+		<p>
+			It's not hard to imagine that this is exactly what happened with the iPhone, which has about as perfect an implementation as I've ever seen. Sure - there are some features which would be nice to have,
+			but I am happy to sacrifice them in favour of the phone doing what it does extremely well. A small team, with a focused editor have achieved a level of pixel perfection that we can all strive towards.
+			From a recent article in <a href='http://www.technologyreview.com/printer_friendly_article.aspx?id=18621'>Technology Review</a>:
+			<blockquote>
+				"That's why it's perfect," says [Robert] Brunner, "and the reason this is getting done is because Steve Jobs is saying, 'Do it.'"
+			</blockquote>
+			Let an editor guide you.
+		</p>
+	</p>
+<%= dated %>

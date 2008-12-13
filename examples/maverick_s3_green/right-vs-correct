@@ -1,0 +1,59 @@
+<%= titled "On being right" %>
+
+<p>
+	<div class='callout'>
+		modern tools and techniques
+		can add tremendous value
+	</div>
+	There are a wide range of tools available to help manage the frantic rate of change often found in scientific domains. These tools and techniques hinge around
+	the <a href='http://www.greenisgood.co.uk/pages/show/agileinformatics-gettingstarted'>three pillars</a> of modern development approaches: versioning, testing and automation.
+</p>
+<p>
+	With tight deadlines, developing software around scientific domains can mean that these tools are overlooked, with the developer's eyes focused on achieving a particular task. This post isn't 
+	about these tools <i>per se</i>, but how and when to employ them for maximum impact. 
+</p>
+<p>
+	<b>Correct</b><br />
+	<div class='callout'>
+		fear of failing to implement it 'correctly' should not prevent a development team from getting started
+	</div>
+	As an illustration, let's take a look at unit testing. Unit testing is an approach used to evaluate whether a software component behaves as intended. It requires a collection of assertions
+	to be coded up independently of the central module, which exercises and tests the logic within. When reading up on unit testing, one quickly stumbles across a wealth of value added services to augment these tests:
+	<ul>
+		<li>Test coverage: the proportion of exercised code is calculated</li>
+		<li>Test driven design: tests are written before the modules they exercise</li>
+		<li>Automated testing: automated build servers</li>
+		<li>Functional and integration tests: controller, templates and integrated system tests</li>
+		<li>User acceptance testing: working with users to evaluate usefulness</li>
+		<li>Code randomization and limit tests: searching for uncaught edge cases</li>
+	</ul>
+	These tools represent a broader test framework, but the fear of not achieving a full, 'correct' implementation should not prevent a development team from getting started with their first unit tests. It is far more important to 
+	test the right things, than to be seen to be testing correctly.
+</p>
+<p>
+	<b>Right</b><br />
+	It is easy to put off testing on hearing tall tales of 100% test coverage (<i>required</i> in some <a href='http://thinkrelevance.com/'>companies</a>, unbelievably) or dramatic, <a href='http://davidweiss.blogspot.com/2006/04/tour-of-microsofts-mac-lab.html'>comprehensive test facilities</a>, for fear that
+	writing tests is an all or nothing venture, and opting for <i>nothing</i>. In practice, writing tests should focus on quality in the right place:
+	<ul>
+		<li><b>The right scope</b><br />
+			Test only what needs testing: avoid testing methods already in place elsewhere.<br /><br /></li>
+		<li><b>The right scale</b><br />
+			Building far reaching helpers or complex mocking is typically avoidable for most modules<br /><br /></li>
+		<li><b>The right time</b><br />
+			The earlier the better!</li>
+	</ul>
+	By keeping these aims in mind, it is possible to implement both the required feature set whilst maintaining a solid test foundation beneath your application.
+</p>
+<p>
+	<b>Review</b><br />
+	Building a review period into a development timeline is a great way to evaluate current practices to highlight what's working, and what isn't. This is the place
+	to think about ramping up a test framework to more advanced approaches as necessary, rather than never getting going because the scale of doing things 'correctly' is too vast.
+</p>	
+<p>
+	<b>"Agile" vs agile</b><br />
+	A common misconception is that 'agile' development is a millstone: loaded down with jargon and heavyweight academic practices that 
+	fail to translate into the real world. However, by focussing less on doctrine and more on pragmatic use and review, modern tools and techniques
+	can add tremendous value whist reducing risk and costs of scientific software projects.
+</p>
+
+<%= dated %>

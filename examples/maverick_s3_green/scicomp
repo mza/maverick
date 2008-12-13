@@ -1,0 +1,13 @@
+<%= titled 'Forthcoming talk: SciComp@Cam' %>
+
+The next meeting of the <a href='http://scicomp.collectivex.com/'>Scientific Computing forum in Cambridge</a> is taking place on the 20th September.
+<br /><br />
+This month's focus is the semantic web, with talks from <a href='http://wwmm.ch.cam.ac.uk/blogs/corbett/'>Peter Corbett</a> (who gave an excellent demo of his recent work at <a href='http://www.barcamp.org/BarCamb'>BarCamb</a>), and what promises to be a lively discussion on RDF hosted by fellow Genome Campus denizen <a href='http://esw.w3.org/topic/Semantic_Bioinformatics'>Renato Golin</a>. I'm also on the roster, giving an introduction to <a href='http://www.microformats.org'>microformats</a> in biology.
+<br /><br />
+It feels to me that the SciComp@Cam group is starting to pick up some momentum, highlighting the healthy state of computational science in and around Cambridge. There are 235 registered members to date: if you work in the field in the area and are not yet signed up, feel free to <a href='https://scicomp.collectivex.com/join'>join us</a>.
+<br /><br />
+If you, like me, find the potent cocktail of semantic markup, wine and nibbles nigh on irresistible, I very much look forward to meeting you there.
+<br /><br />
+This month's event kicks off at 5.15pm at the <a href='http://www.cms.cam.ac.uk/site/'>Center for Mathematical Sciences</a> on <a href='http://www.cam.ac.uk/map/v4/drawmap.cgi?mp=main;xx=1093;yy=514;mt=c;tl=Centre%20for%20Mathematics%20Sciences'>Wilberforce Road</a>.
+
+<%= dated %>

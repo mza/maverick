@@ -1,0 +1,24 @@
+<%= titled 'London: Genomes on Rails' %>
+
+<p>
+	If you missed my recent talk at <a href='http://en.oreilly.com/rails2008/public/schedule/detail/1846'>RailsConf</a> in Portland, I'm giving it again this evening at the London Ruby User Group.
+</p>
+<p>
+	<blockquote>
+		Genomes on Rails<br />
+		Monday the 9th of June, from 6:30pm to 8:00pm<br />
+		London Ruby User Group<br />
+		<a href='http://www.sessionshouse.com/'>The Old Sessions House</a> on <a href='http://tinyurl.com/2bjjzz'>Clerkenwell Green</a>
+	</blockquote>
+</p>
+<p>
+	I'll be talking about how we're using Ruby and Rails on the next generation sequencing platform at the <a href='http://www.sanger.ac.uk'>Wellcome Trust Sanger Institute</a>. To get the skinny, take a look at the quick interview I did
+	with the <a href='http://railsenvy.com/'>RailsEnvy</a> guys in Portland.
+</p>
+<p>
+	<object width="400" height="300">	<param name="allowfullscreen" value="true" />	<param name="allowscriptaccess" value="always" />	<param name="movie" value="http://www.vimeo.com/moogaloop.swf?clip_id=1104164&amp;server=www.vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" />	<embed src="http://www.vimeo.com/moogaloop.swf?clip_id=1104164&amp;server=www.vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object><br /><a href="http://www.vimeo.com/1104164?pg=embed&sec=1104164">Matt Wood at Railsconf 2008</a> from <a href="http://www.vimeo.com/user504460?pg=embed&sec=1104164">Gregg Pollack</a> on <a href="http://vimeo.com?pg=embed&sec=1104164">Vimeo</a>.
+</p>
+<p>
+	Hopefully see you there.
+</p>
+<%= dated %>
