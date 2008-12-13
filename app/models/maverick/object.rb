@@ -26,6 +26,10 @@ module Maverick
       self.content
     end
     
+    def about
+      { 'last-modified' => Time.now }
+    end
+    
     private
     
       def load_content

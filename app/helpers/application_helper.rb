@@ -4,7 +4,7 @@ module ApplicationHelper
   attr_accessor :working_post, :working_site, :assets, :illustration_url, :illustration_credit
   
   def titled(title)
-    "<div class='title'><a href='/#{working_site.nickname}/pages/show/#{working_post.title}'>#{title}</a></div>"
+    "<h1><div class='title'><a href='/#{working_site.nickname}/pages/show/#{working_post.title}'>#{title}</a></div></h1>"
   end
   
   def dated
