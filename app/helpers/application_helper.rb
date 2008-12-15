@@ -10,7 +10,7 @@ module ApplicationHelper
   def dated
     "<div class='date'>#{working_post.last_modified}</div>"
   end
-  
+    
   def method_missing(method, *params)
     unless working_post.nil?
       begin
@@ -47,6 +47,16 @@ module ApplicationHelper
       raise Maverick::NoSuchKeyException, "Failed to prepare content: #{e}"
     end
     post.prepared_content
+  end
+  
+  # legacy calls
+  
+  def date
+    dated
+  end
+  
+  def add_page_details(options)
+    titled(options)
   end
       
 end

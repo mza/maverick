@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
     
   BUCKET_PREFIX = "maverick_s3"
   Site.bucket_prefix = BUCKET_PREFIX
-  Maverick::Content.adaptor = Maverick::Adaptor::Local
+  Maverick::Content.adaptor = Maverick::Adaptor::S3
     
   def bucket_prefix
     BUCKET_PREFIX
