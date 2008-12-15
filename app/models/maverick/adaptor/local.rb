@@ -53,7 +53,7 @@ module Maverick
     
       def list(name)
         collection = []
-        Dir.new("#{path}/#{name}").entries.reject { |e| [ "..", "." ].include? e }.each do |file|
+        Dir.new("#{path}/#{name}").entries.reject { |e| [ "..", ".", ".DS_Store" ].include? e }.each do |file|
           collection << Maverick::Object.new({ :name => file, :filename => "#{path}/#{name}/#{file}" })
         end
         collection

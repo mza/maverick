@@ -7,15 +7,15 @@ module Maverick
     
       @@settings = nil
     
-      def self.description
+      def description
         "S3"
       end
     
-      def self.load_settings
+      def load_settings
         @@settings = YAML.load(File.open("#{Rails.root}/config/s3.yml")).symbolize_keys
       end
     
-      def self.connect
+      def connect
         if @@settings.blank?
           load_settings
         end
@@ -23,8 +23,8 @@ module Maverick
         aws = nil
         begin
           aws = AWS::S3::Base.establish_connection!(
-             :access_key_id     => settings[:access_key_id],
-             :secret_access_key => settings[:secret_access_key]
+             :access_key_id     => @@settings[:access_key_id],
+             :secret_access_key => @@settings[:secret_access_key]
           )
         rescue 
           raise Maverick::ConnectionFailedException
@@ -36,24 +36,29 @@ module Maverick
       
       end
     
-      def self.reconnect
+      def reconnect
         if AWS::S3::Base.connected?
           AWS::S3::Base.disconnect!
         end
         connect
       end
-        
-      def self.store(file_name, data, bucket)
+      
+      def list(bucket)
+        reconnect
+        AWS::S3::Bucket.objects(bucket)
+      end
+      
+      def store(file_name, data, bucket)
         connect
         # For public access control - :access => :public_read
         S3Object.store(file_name, data, bucket, :access => :public_read)
       end
     
-      def self.remove(name, bucket)
+      def remove(name, bucket)
         S3Object.delete(name, bucket)
       end
-        
-      def self.find_object(name, bucket)
+      
+      def retrieve(name, bucket)
         connect
         begin
           S3Object.find(name, bucket)
@@ -62,22 +67,22 @@ module Maverick
         end
       end
     
-      def self.find_bucket(name)
+      def find_bucket(name)
         connect
         Bucket.find(name)
       end
     
-      def self.buckets(reload = nil)      
+      def buckets(reload = nil)      
         connect
         Service.buckets(reload)
       end
     
-      def self.create_bucket(name)
+      def create_bucket(name)
         connect
         Bucket.create(name)
       end
     
-      def self.delete_bucket(name)
+      def delete_bucket(name)
         connect
         Bucket.delete(name)
       end
