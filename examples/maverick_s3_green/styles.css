@@ -21,11 +21,11 @@ h1 {
 
 div.container {
 	margin: 0 auto;
-	width: 700px;
+	width: 800px;
 }
 
 div#content {
-	width: 400px;
+	width: 540px;
 	float: left;
 }
 
@@ -104,10 +104,20 @@ a:hover {
 }
 
 div.post h1 {
-	font-family: helvetica;
-	font-style: normal;
+	font-family: helvetica, arial, sans-serif;
 	font-size: 18px;
-	text-transform: uppercase;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+div.title a, div.title a:link, div.title a:visited {
+	color: #008000;
+}
+
+div.title h1 {
+	font-family: georgia, times, serif;
+	font-size: 36px;
+	padding-bottom: 20px;	
 }
 
 div.post {
