@@ -21,7 +21,7 @@ namespace :deploy do
   
   desc "Correctly sets ownership of environment.rb"  
   task :set_ownership do
-    run "chown www-data:www-data #{current_path}/config/environment.rb"
+    run "chown www-data:www-data #{current_path}/config/environment.rb"    
   end
   
   desc "Restarting Passenger with restart.txt"

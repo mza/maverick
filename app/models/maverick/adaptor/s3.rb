@@ -77,12 +77,12 @@ module Maverick
         Service.buckets(reload)
       end
     
-      def create_bucket(name)
+      def create_location(name)
         connect
         Bucket.create(name)
       end
     
-      def delete_bucket(name)
+      def delete_location(name)
         connect
         Bucket.delete(name)
       end
