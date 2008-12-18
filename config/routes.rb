@@ -36,6 +36,8 @@ ActionController::Routing::Routes.draw do |map|
   #     admin.resources :products
   #   end
 
+  map.connect ':controller/:action/:page', :id => 'green'
+
   map.connect ':id/:controller/:action/:page'
   map.connect ':id/:controller/:action'
   

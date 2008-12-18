@@ -24,6 +24,11 @@ namespace :deploy do
     run "chown www-data:www-data #{current_path}/config/environment.rb"    
   end
   
+  desc "Uploads location settings from config/deploy"  
+  task :set_locations do
+    put File.read('config/deploy/location.yml'),  "#{current_path}/config/location.yml"
+  end
+  
   desc "Restarting Passenger with restart.txt"
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "touch #{current_path}/tmp/restart.txt"
@@ -39,7 +44,7 @@ namespace :s3 do
   
   desc "Updates the server's AWS credentials with those in config/s3.yml"
   task :update_credentials do
-    put File.read('config/s3.yml'),  "#{current_path}/config/s3.yml"
+    put File.read('config/deploy/s3.yml'),  "#{current_path}/config/s3.yml"
   end
   
 end

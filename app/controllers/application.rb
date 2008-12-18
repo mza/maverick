@@ -17,7 +17,10 @@ class ApplicationController < ActionController::Base
     
   BUCKET_PREFIX = "maverick_s3"
   Site.bucket_prefix = BUCKET_PREFIX
-  Maverick::Content.adaptor = Maverick::Adaptor::S3
+  
+  location = YAML.load(File.open("#{Rails.root}/config/location.yml")).symbolize_keys
+  
+  Maverick::Content.adaptor = location[:posts].constantize
     
   def bucket_prefix
     BUCKET_PREFIX
