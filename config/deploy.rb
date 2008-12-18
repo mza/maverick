@@ -16,6 +16,7 @@ role :db,  "injectify.com", :primary => true
 
 after :deploy, "deploy:set_ownership"
 after :deploy, "s3:update_credentials"
+after :deplot, "deploy:set_location"
 
 namespace :deploy do
   
@@ -25,7 +26,7 @@ namespace :deploy do
   end
   
   desc "Uploads location settings from config/deploy"  
-  task :set_locations do
+  task :set_location do
     put File.read('config/deploy/location.yml'),  "#{current_path}/config/location.yml"
   end
   
