@@ -14,7 +14,8 @@ role :app, "injectify.com"
 role :web, "injectify.com"
 role :db,  "injectify.com", :primary => true
 
-after :deploy, "set_ownership"
+after :deploy, "deploy:set_ownership"
+after :deploy, "s3:update_credentials"
 
 namespace :deploy do
   
@@ -32,4 +33,13 @@ namespace :deploy do
     desc "#{t} task is unnecessary with Passenger"
     task t, :roles => :app do ; end
   end
+end
+
+namespace :s3 do
+  
+  desc "Updates the server's AWS credentials with those in config/s3.yml"
+  task :update_credentials do
+    put File.read('config/s3.yml'),  "#{current_path}/config/s3.yml"
+  end
+  
 end

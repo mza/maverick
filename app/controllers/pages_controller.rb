@@ -1,8 +1,12 @@
 class PagesController < ApplicationController
   
   def index
-    @site = Site.find_by_nickname(params[:id])
-    @posts = @site.posts
+    if params[:id].nil?
+      redirect_to :action => :not_found
+    else
+      @site = Site.find_by_nickname(params[:id])
+      @posts = @site.posts
+    end
   end
   
   def styles
@@ -13,6 +17,9 @@ class PagesController < ApplicationController
   def show
     @site = Site.find_by_nickname(params[:id])
     @post = @site.post(params[:page])
+  end
+  
+  def not_found
   end
   
 end
