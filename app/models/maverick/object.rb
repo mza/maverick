@@ -1,7 +1,7 @@
 module Maverick
   class Object
 
-    attr_accessor :filename, :content, :name
+    attr_accessor :filename, :content, :name, :date
     
     def initialize(options)
       self.filename = options[:filename]
@@ -27,7 +27,7 @@ module Maverick
     end
     
     def about
-      { 'last-modified' => Time.now }
+      { 'last-modified' => self.date }
     end
     
     private
@@ -40,6 +40,7 @@ module Maverick
           raise Maverick::FileNotFoundException, "File not found: #{self.filename}"
         end
         self.content = file.read
+        self.date = File.mtime(self.filename)
       end
       
       def logger

@@ -25,10 +25,14 @@
     Posts: <%= @site.all_assets.size %> &middot; <%= link_to 'upload', :controller => :sites, :action => :upload, :id => @site.id %>
   </p>
   <p>
-    <ul>
+	<table width='100%'>
       <% for post in @site.all_assets %>
-      <li><%= link_to post.title, "/#{@site.nickname}/pages/show/#{post.title}" %> &middot; <%= link_to 'x', :controller => :sites, :action => :remove, :id => @site.id, :post => post.title %></li>
+		<tr>
+			<td><%= link_to post.title, "/#{@site.nickname}/pages/show/#{post.title}" %></td>
+			<td><%= post.date.to_formatted_s :long %></td>
+			<td><%= link_to 'x', :controller => :sites, :action => :remove, :id => @site.id, :post => post.title %></td>
+		</tr>		
       <% end %>
-    </ul>
+    </table>
   </p>
 </div>

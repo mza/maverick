@@ -48,10 +48,13 @@ module Maverick
         AWS::S3::Bucket.objects(bucket)
       end
       
-      def store(file_name, data, bucket)
+      def store(file_name, data, bucket, date)
         connect
         # For public access control - :access => :public_read
         S3Object.store(file_name, data, bucket, :access => :public_read)
+        object = self.retrieve(file_name, bucket)
+        object.metadata[:publication] = date.to_s
+        object.store
       end
     
       def remove(name, bucket)

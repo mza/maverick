@@ -44,8 +44,8 @@ class Site < ActiveRecord::Base
     Post.new(Maverick::Content.retrieve(title, self.bucket_name))
   end
   
-  def add_post(title, file)
-    Maverick::Content.store(title, file.read, self.bucket_name)
+  def add_post(title, date, file)
+    Maverick::Content.store(title, file.read, self.bucket_name, date)
   end
 
   def stylesheet

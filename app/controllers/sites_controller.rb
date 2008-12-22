@@ -58,7 +58,9 @@ class SitesController < ApplicationController
     data = params[:import][:upload]
     
     unless data.blank?
-      @site.add_post(params[:import][:stub], data)
+      publication_date = DateTime.civil(params[:import][:"date(1i)"].to_i, params[:import][:"date(2i)"].to_i, params[:import][:"date(3i)"].to_i, params[:import][:"date(4i)"].to_i, params[:import][:"date(5i)"].to_i)
+      logger.debug "PUB DATE: #{publication_date}"
+      @site.add_post(params[:import][:stub], publication_date, data)
       flash[:notice] = "Post uploaded"
     else
       flash[:notice] = "Upload failed: file was empty!"

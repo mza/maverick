@@ -37,7 +37,19 @@ class Post
   end
   
   def last_modified
-    @object.about['last-modified'].to_date.to_formatted_s :long
+    self.date.to_formatted_s :long
+  end
+  
+  def date
+    d = ""
+    logger.debug self.title
+    if @object.metadata.nil?
+      d = @object.metadata[:publication]
+    end
+    if d.empty?
+      d = @object.about['last-modified'].to_time
+    end
+    d
   end
   
   def prepare_content(b)

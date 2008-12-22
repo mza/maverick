@@ -9,6 +9,12 @@ img {
 	border: 0px;
 }
 
+div#header {
+	border-top: 3px solid #00810B;
+	padding-bottom: 5px;
+	background: #B5FF90;
+}
+
 h1 {
 	padding: 0px;
 	margin: 0px 0px 10px 0px;
@@ -44,6 +50,7 @@ div#menu {
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	border-bottom: 4px solid #008000;
+	background: #B5FF90;
 }
 
 div#extras {
@@ -73,7 +80,7 @@ div#extras li {
 
 div#title {
 	text-align: center;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #008000;
 	margin-bottom: 20px;
 }
 
@@ -91,7 +98,7 @@ div#colophon {
 }
 
 div#author {
-	color: #666;
+	color: #333;
 }
 
 a, a:link, a:visited {
@@ -117,7 +124,8 @@ div.title a, div.title a:link, div.title a:visited {
 div.title h1 {
 	font-family: georgia, times, serif;
 	font-size: 36px;
-	padding-bottom: 20px;	
+	padding-bottom: 20px;
+	line-height: 40px;
 }
 
 div.post {

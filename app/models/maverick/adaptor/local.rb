@@ -33,7 +33,7 @@ module Maverick
         connect
       end
         
-      def store(file_name, data, bucket)
+      def store(file_name, data, bucket, date)
         connect
         File.open("#{path}/#{bucket}/#{file_name}", 'w') do |f|
           f.write(data)
