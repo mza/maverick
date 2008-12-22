@@ -30,6 +30,10 @@ module Maverick
       { 'last-modified' => self.date }
     end
     
+    def metadata
+      {}
+    end
+    
     private
     
       def load_content
