@@ -41,13 +41,15 @@ class Post
   end
   
   def date
-    d = ""
+    d = nil
     logger.debug self.title
-    if @object.metadata.nil?
-      d = @object.metadata[:publication]
+    unless @object.metadata[:publication].nil?
+      d = @object.metadata[:publication].to_time
+      logger.debug "META: #{d}"
     end
-    if d.empty?
+    if d.nil?
       d = @object.about['last-modified'].to_time
+      logger.debug "ABOUT: #{d}"
     end
     d
   end
