@@ -16,7 +16,7 @@ role :db,  "injectify.com", :primary => true
 
 after :deploy, "deploy:set_ownership"
 after :deploy, "s3:update_credentials"
-after :deplot, "deploy:set_location"
+after :deploy, "deploy:set_location"
 
 namespace :deploy do
   

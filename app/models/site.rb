@@ -29,7 +29,7 @@ class Site < ActiveRecord::Base
         p << Post.new(object)
       end
     end
-    p = p.sort_by {|post| post.date }
+    p = p.sort_by {|post| post.date }.reverse
   end
   
   def reserved_names

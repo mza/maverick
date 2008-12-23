@@ -1,5 +1,5 @@
 <%= titled 'Developing for the web: slides' %>
-
+	
 	I gave a talk today at the <a href='http://www.sanger.ac.uk'>Sanger Institute</a> to kick off our Autumn talk series. 
 	<br /><br />
 	I spoke about developing for the web, introducing an A to Z of web app techniques, technology and jargon. It starts at
