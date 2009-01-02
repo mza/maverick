@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   
   def index
     if params[:id].nil?
-      redirect_to :action => :not_found
+      redirect_to_default
     else
       @site = Site.find_by_nickname(params[:id])
       @posts = @site.posts
@@ -20,6 +20,16 @@ class PagesController < ApplicationController
   end
   
   def not_found
+  end
+  
+  private
+
+  def redirect_to_default
+    if default_site.nil?
+      redirect_to :action => :not_found
+    else
+      redirect_to :id => default_site
+    end
   end
   
 end

@@ -21,9 +21,14 @@ class ApplicationController < ActionController::Base
   location = YAML.load(File.open("#{Rails.root}/config/location.yml")).symbolize_keys
   
   Maverick::Content.adaptor = location[:posts].constantize
+  DEFAULT_SITE = location[:default]
     
   def bucket_prefix
     BUCKET_PREFIX
+  end
+  
+  def default_site
+    DEFAULT_SITE
   end
       
 end
