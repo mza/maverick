@@ -1,0 +1,167 @@
+<%= titled 'Introduction to Scrum' %>
+
+<p>
+<a href='http://www.sanger.ac.uk/Users/mw4'>I'm</a> part of the Production Software team here 
+at the <a href='http://www.sanger.ac.uk'>Wellcome Trust Sanger Institute</a>, developing software 
+to support the various genomic research and sequencing efforts in the Institute. A relatively 
+mall development team works on a wide range of projects, from sequencing tracking to medical 
+re-sequencing. As with all scientific projects the requirements, policies and protocols of 
+these projects change frequently - and the software development often struggles to keep up.
+</p>
+<p>
+One of the biggest problems scientific software faces is a failure to deliver on expectations.
+Those steering the scientific aspects of a project often have a very clear picture of what 
+they need the software to do in order to complete their research on time and on budget. 
+They have a clear picture of the process and the data. 
+However, this picture is often poorly interpreted by software developers,
+ resulting in delivering software that fits poorly with the scientific process, 
+and is inflexible when change inevitably arrives.
+</p>
+<p>
+	<div class='callout'>
+		 we’re aiming to have our software in use more quickly,
+		increasing the speed at which we receive feedback.
+	</div>
+Clearly, inflexible software that is resistant to change is 
+not a good fit for scientific research - and we’re on a mission to change things. 
+Along with a collection of technical approaches (which we hope to cover in this blog), 
+we’re looking at better ways of keeping pace with the needs of the science we support. 
+This is no trivial undertaking - it requires a change in approach not just from the 
+software developers on the team, but from the leaders of the scientific projects we 
+work with, but the payoff is big: increased quality, better reliability and faster 
+turn around.
+</p>
+<p>
+Essentially - we’re aiming to have our software in use more quickly,
+increasing the speed at which we receive feedback.
+</p>
+<p>
+There are solutions to these problem. 
+As we mentioned, some are technical (using tests, continuous integration, version control
+ and the like), but as important are attempts to increase the interaction between 
+developers and front-line scientists.
+</p>
+<p>
+One approach, the one we’re going to try to start using here is called Scrum.
+ Named after the daily meeting at its heart, Scrum is a method of managing rapidly
+ changing software projects. It addresses a lot of the problems outlined above, 
+and appears to be an excellent fit for the development of scientific software.
+</p>
+<p>
+<h1>1. What is Scrum?</h1>
+<p>
+Scrum is a framework for managing software projects. It makes use of small teams 
+to deliver software that addresses a collection of requirements, drawn up . 
+The software is delivered incrementally: there is no monolithic, formal functional 
+specification, instead a set of ’stories’ is drawn up by the project leader, 
+with each one outlining a particular aspect that the software should address. 
+</p>
+<p>
+Each story is given an importance, which creates a ‘backlog’ of ranked items that need 
+implementing to support the current scientific process.
+</p>
+<p>
+The development team will tackle (no pun intended) these items one by one,
+ in order of importance, during a development ’sprint’ over a predetermined time period: 
+usually two to four weeks.
+</p>
+<p>
+	<div class='callout'>
+		The team update their process each day, at a regular, short, ’stand up’ meeting. 
+	</div>
+Once the stories have been written, the development team and the project
+ leader meet to go through the list. The development team estimate how
+ long each item on the backlog will take, which dictates how many stories 
+will be worked on during the development sprint. It is essential that the
+ project leader is present for this step - they may be required to give more
+ information about a story to help estimate the time, or make decisions about 
+which stories are included in the sprint. Items not added to the sprint can 
+still be added at a later stage: Scrum is an iterative process, and each of
+ these stages is repeated when planning the next sprint.
+</p>
+<p>
+Once the sprint backlog has been finalised, the team are encouraged to work 
+uninterrupted on the stories for the period of the sprint (bug fixes and unplanned 
+items are still permitted).
+</p>
+<p>
+The team update their process each day, at a regular, short, ’stand up’ meeting. 
+To keep a tight focus on these meetings, and prevent them from overrunning
+ (meetings are toxic), each team member is only permitted to answer three questions:
+<ul>
+<li>What did you do yesterday?</li>
+<li>What are you going to do today?</li>
+<li>Are there any road blocks to stop you doing that?</li>
+</ul>
+</p>
+<p>
+Additional discussion is encouraged, but takes place offline. 
+Non-team members can attend this meeting if they wish, but are not permitted to contribute.
+ Again - this aims to keep the meeting short and to the point.
+</p>
+<p>
+This meeting occurs regularly for the duration of the sprint.
+ Savvy teams can also monitor their progress more visually -
+ but we’ll come back to that in a future posting.
+</p>
+<p>
+At the end of the sprint session, the software is demonstrated to both the
+ scientific and development teams, before a final stage in the process occurs:
+ a retrospective. This is a meeting in which the development sprint is discussed:
+ what worked, what didn’t, what was good, what was bad. 
+</p>
+<p>
+his is an essential part of the Scrum approach, as it provides an open forum in which the practical nature of the approach can be pruned (or in some cases, felled).
+</p>
+<p>
+Once the retrospective is over, planning for the next sprint can start.
+</p>
+<p>
+And the beat goes on.
+</p>
+<h1>2. How does it benefit scientific research?</h1>
+<p>
+	<div class='callout'>
+		something useful is delivered earlier than 
+		it would be with a tradiationally specified product
+	</div>
+The Scrum approach closes the loop between developers and users.
+ Rather than a team rolling out what they think works, Scrum maintains input
+ from the project leader to ensure that once they software is deployed,
+ it will actually fit the bill.
+</p>
+<p>
+The iterative approach is also more open to change, an essential property of
+ scientific software. Because the sprints are usually relatively short, rapid 
+feedback ensures that as the software develops, it stays in line with the current
+ approaches used at the bench. With the ranked backlog, the most important 
+features also get handled first, so something useful is delivered earlier than 
+it would be with a tradiationally specified product.
+</p>
+<h1>3. How does it benefit software development?</h1>
+<p>
+For many of the same reasons as it benefits the scientific team: 
+the ranked list keeps the project on track, and makes sure that development
+ time is focused, not wasted on unnecessary features.
+</p>
+<p>
+Progress can be easily tracked and fed back to the project leaders, 
+and the retrospective meetings provide a good sounding block for changes.
+ Scrum also sits nicely along side some of the Extreme Programming approaches.
+</p>
+<h1>4. How are you going to do this?</h1>
+<p>
+One advantage of Scrum is that it is not a ‘do or die’ approach - but more of a <i>framework</i>.
+ It’s perfectly acceptable to cherry pick which aspects to use, or dropping ones which don’t work.
+ We intend on trying to stick close to the major principles of Scrum to start with. One of the
+advantages of regular retrospectives, of course, is that it provides space
+ to discuss what does work, and what does not.
+</p>
+<p>
+The first hurdle in using Scrum, is to convey its advantages to other folks in
+ the software development and scientific teams - we gave a simple talk to some of the project leaders
+we collaborate with: <a href='http://www.greenisgood.co.uk/pages/show/scrum-project-leaders'>the slides are available here</a>.
+</p>
+<b>UPDATE:</b> I've also collected some thoughts on <a href='http://www.greenisgood.co.uk/pages/show/scrum-backlog'>how to go about build a product backlog</a>.
+
+<%= dated %>

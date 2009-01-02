@@ -1,0 +1,28 @@
+<%= titled 'Agile heart Scrum' %>
+
+<p>
+	A quick story, in the Tom-storms-in-to-the-room style.
+</p>
+<p>
+	Chris, Sarah and Oliver are part of a team working on a medical informatics application. Chris and Sarah are putting together an implementation of a simple diagnostic
+	'surgical seive' - it's looking good, but query performance is proving to be a bottleneck. In the daily stand up meeting, Chris and Sarah might highlight this as a problem that's holding up progress; Oliver suggests a fix, which the three might 
+	discuss after the meeting, reporting back the next day.
+</p>
+<p>		
+	<b>Agile development removes road blocks</b><br />
+	<div class='callout'>
+		<i>the right approach and the right tools can remove a road block more quickly</i>
+	</div>
+	This is a classic example of how the daily Scrum meeting can help maintain focus. However, if the team are up and running with an agile development approach, many classic 'roadblocks' can be removed by very 
+	rapid iteration. The result is that many problems are solved quickly, often to the point that they don't bubble up to the daily meeting.
+</p>
+<p>
+	For example: Chris starts out by adding a unit test that exercises the necessary classes and calls the poorly performing code. During this time, Sarah branches the code in the source code
+	repository: this setup allows rapid exploration whilst ensuring existing functionality is conserved. The two then pair together to 
+	remove the bottleneck, migrating the underlying domain model and existing logic as necessary. Once they're happy that all the tests still pass, they can merge their changes.
+</p>
+<p>
+	Pulling together the right approach and the right tools can remove a road block more quickly.
+</p>
+
+<%= dated %>

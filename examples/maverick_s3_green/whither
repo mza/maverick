@@ -1,0 +1,71 @@
+<%= titled 'Whither the stand up meeting: redux' %>
+
+<p>
+	Scrum's iterative approach to development consists of four main sections:
+	<ul>
+		<li><b>Project planning</b><br />Collecting stories from project owners, prioritisation and planning for the upcoming sprint.<br /><br /></li>
+		<li><b>Development sprint</b><br />The actual development work, directed by the prioritised backlog created in the project planning stage<br /><br /></li>
+		<li><b>The Demo</b><br />A demonstration of the completed stories provided by the development sprint<br /><br /></li>
+		<li><b>Feedback</b><br />A retrospective on the good, bad and straight up ugly parts of the most recent iteration.<br /><br /></li>
+	</ul>
+	This is an excellent framework for rapid, focused software development. In the scientific software realm maintaining focus on the problem (and hopefully, a possible solution) whilst keeping
+	momentum and allowing for rapid change is essential. These main milestones in the iteractive process are usually held together by a daily 'stand up' meeting: a "scrum", from which the framework takes its name. This
+	ensures that all the developers on the project are on the same stage as to the state of progress, that focus is maintained and that any road blocks to progress are identified and removed.
+</p>
+<p>
+	<b>Disparate projects require different approach</b><br />
+	Within the scientific software realm, however, things operate on a subtly different level. You are less likely to find yourself in a larger team focussed toward a single project (although, certainly, <a href='http://www.pubmed.com'>such</a> <a href='http://www.ensembl.org'>projects</a> <a href='http://pfam.sanger.ac.uk'>exist</a>), and much more likely to find a team 
+	working on a wide range of scientific problems.
+	<br /><br />
+	This is not to say that the team wouldn't have a collection of libraries shared between projects, but that the projects themselves are geared towards very different users in very different environments.
+	Some examples, currently in play at <a href='http://www.sanger.ac.uk'>Sanger</a>:
+	<ul>
+		<li>Automatic trace release, as required by our funding source, and used by project leaders</li>
+		<li>Illumina sequencing tracking, used by faculty members to organise and track sequencing requests</li>
+		<li>Laboratory information management, used by lab staff to direct experiments at the bench</li>
+		<li>Repository for short read traces, used by all to query and recover short read traces</li>
+	</ul>
+	Such a wide range of multi faceted projects can be seen in informatics departments all around the world. Whilst the physical implementation may be similar, the demands and prioritisation from each set of users can be very different, framing and directing the projects differently. Can a 10 minute daily meeting, limited to answers to only three questions, really hope to pull together such threads?	
+</p>
+<p>
+	<b>The Good</b><br />
+	<div class='callout'>
+		<i>one project can often seed an innovative change in direction elsewhere</i>
+	</div>
+	Communication within teams is absolutely key to progress, and a daily stand up meeting provides a regular point of contact for information exchange. This is a Good Thing, but doubly so with disparate informatics projects where regular contact also provides a fulcrum for the cross pollination of ideas.
+</p>
+<p>
+	The solutions to problems encountered in one project can often seed an innovative change in direction elsewhere.
+</p>
+<p>
+	<b>The Bad</b><br /><br />
+	Even short meetings use up valuable time. With larger teams (6+), this can become considerable, especially if the focus of the meeting is lost. A steady, guiding hand is essential to make sure that the meeting stays on track and adds value.
+</p>
+<p>
+	Editors have a role to play in development meetings as much as they do in other areas.
+</p>
+<p>
+	<b>The Ugly</b><br /><br />
+	As <a href='/pages/show/workflow'>recently posted</a>, I've been concerned with promoting Flow recently. A regular, daily meeting is pretty much guaranteed to break the flow of work, no matter when it occurs during the day, but this interruption can be damaging to both the work, and the meeting. 
+</p>
+<p>	Beforehand, developers are required to 
+	break their process and collect their thoughts for the meeting, swapping back to their previous task when the meeting concludes. Because the meeting is deliberately short, developers can find themselved in limbo: focused on neither their work nor the meeting, often forgoing the opportunity to collaborate in favour of getting back to their broken task.
+</p>
+	<b>Improving value</b><br /><br />
+	The often rapid reduction of 'real' roadblocks to progress, and the lack of overlap between projects on scientific software teams leaves the daily stand up meeting a little redundant. It is reduced to a simple 
+	status update, often adding little value towards progress.
+</p>
+<p>
+	An alternative approach could be a weekly 'State of the Union' discussion in which each team member takes a few minutes (no more than three) to present last week's work and outline the challenges for the next. 
+	<ul>
+		<li>A slightly longer, less frequent meeting removes interruptions and promotes Flow. First thing on a Monday morning is probably a good time to get started.<br /><br /></li>
+		<li>Less swapping between tasks, since the meeting is less frequent<br /><br /></li>
+		<li>A simple agenda (which can be the same each week, as happens at Apple) promotes focus<br /><br /></li>
+		<li>Provides an opportunity to highlight new libraries, patterns or plugins which can be shared across the team.<br /><br /></li>
+		<li>Limiting each team members time is equivalent to limiting what questions are answered at the daily scrum meeting: it promotes brevity and prevents show stealing.<br /><br /></li>
+		<li>Can for the basis of a regular team retrospective on the most recent sprint.</li>
+	</ul>
+	If your daily meeting is suffering, or if the idea of it is putting you off implementing Scrum in other areas, it may be worth a shot.
+</p>
+
+<%= dated >
