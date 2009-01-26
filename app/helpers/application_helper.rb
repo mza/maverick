@@ -5,8 +5,13 @@ module ApplicationHelper
   
   def titled(title)
     "<div class='title'><h1><a href='/#{working_site.nickname}/pages/show/#{working_post.title}'>#{title}</a></h1></div>"
+    working_post.headline = title
   end
   
+  def preview(preview)
+    working_post.preview = preview
+  end
+    
   def dated
     "<div class='date'>#{working_post.last_modified}</div>"
   end
@@ -33,6 +38,20 @@ module ApplicationHelper
       end
     end
     @illustration_url
+  end
+  
+  def overview(post, options)
+    self.working_post = post
+    self.working_site = options[:for]
+    self.assets = options[:assets_from]
+    begin
+      unless post.prepared?
+        post.prepare_content(binding)
+      end
+    rescue Maverick::NoSuchKeyException => e
+      raise Maverick::NoSuchKeyException, "Failed to prepare content: #{e}"
+    end
+    render :partial => "overview", :locals => { :post => post }
   end
       
   def prepare(post, options)

@@ -1,24 +1,13 @@
 			</div>
 		</div>
-		<div id='sidebar'>
-			<div id='menu'>
-				<div id='title'>
-					<a href='/green'><h1>Green <strong>is</strong> Good</h1></a>
-				</div>
-				<div id='colophon'>
-					Featuring articles relating to software, science and the space in-between.
-				</div>
-				<div id='author'>
-					By Matt Wood &middot; <a href='mailto:matt@injectify.com'>Contact</a> &middot; <a href='/green/pages/show/helloworld'>About</a>
-				</div>
-			</div>
-			<div id='extras'>
-				<ul>
-					<li><a href='http://greenisgood.tumblr.com'>Linked list</a></li>
-				</ul>
-			</div>
-		</div>
 		<br clear='all' />
 	</div>
+	<div id='footer'>
+		Hello
+	</div>
+	<script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+	<script type="text/javascript">
+	re_("02w12-x7pgz6j97h");
+	</script>
 </body>
 </html>

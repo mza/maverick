@@ -1,6 +1,8 @@
 <%= titled 'Work flow' %>
 or <b>Whither the daily stand up meeting?</b>
 
+<% preview "This is a workflow" %>
+
 <p>
 	<div class='callout'>
 		<i>Sometimes elegant,

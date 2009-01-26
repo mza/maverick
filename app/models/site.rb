@@ -33,7 +33,7 @@ class Site < ActiveRecord::Base
   end
   
   def reserved_names
-    [ "header", "footer", "styles.css" ]
+    [ "header", "footer", "styles.css", "logo.gif", "index" ]
   end
   
   def remove_post(title)
@@ -56,30 +56,33 @@ class Site < ActiveRecord::Base
     end
   end
   
+  def index
+    content_with_name "index"
+  end
+  
+  def indexed?
+    content_with_name("index").content == ""
+  end  
+  
   def header
-    begin
-      Post.new Maverick::Content.retrieve("header", self.bucket_name)
-    rescue Maverick::FileNotFoundException, Maverick::NoSuchKeyException
-      Post.new Maverick::Object.new(:content => "")
-    end
+    content_with_name "header"
   end
   
   def footer
-    begin
-      Post.new Maverick::Content.retrieve("footer", self.bucket_name)
-    rescue Maverick::FileNotFoundException, Maverick::NoSuchKeyException
-      Post.new Maverick::Object.new(:content => "")
-    end
+    content_with_name "footer"
   end
 
   def stylesheet
+    content_with_name "styles.css"
+  end
+
+  def content_with_name(name)
     begin
-      Post.new Maverick::Content.retrieve("styles.css", self.bucket_name)
+      Post.new Maverick::Content.retrieve(name, self.bucket_name)
     rescue Maverick::FileNotFoundException, Maverick::NoSuchKeyException
       Post.new Maverick::Object.new(:content => "")
     end
   end
-
   
   def create_location
     Maverick::Content.create_location(self.bucket_name)

@@ -2,17 +2,14 @@ class Post
 
   require 'erb'
     
-  attr_accessor :title, :content, :object, :prepared_content, :illustration_url, :illustration_credit
+  attr_accessor :title, :preview, :content, :object, :prepared_content, :illustration_url, :illustration_credit, :headline
   
   def initialize(incoming)
     @object = incoming
     @prepared_content = nil
+    @title = @object.key
   end
-  
-  def title
-    @object.key
-  end
-  
+    
   def prepared?
     !@prepared_content.blank?
   end
@@ -26,14 +23,12 @@ class Post
   end
   
   def illustrated?
-    logger.debug "Checking for illustration: #{self.illustration_url} [ #{self.object_id }]"
     !self.illustration_url.blank?
   end
   
   def illustrated(link, options)
     self.illustration_url = link
     self.illustration_credit = options[:by]
-    logger.debug "POST IS ILLUSTRATED: #{self.illustration_url} by #{self.illustration_credit}: [ #{self.object_id} ]"
   end
   
   def last_modified
@@ -45,11 +40,9 @@ class Post
     logger.debug self.title
     unless @object.metadata[:publication].nil?
       d = @object.metadata[:publication].to_time
-      logger.debug "META: #{d}"
     end
     if d.nil?
       d = @object.about['last-modified'].to_time
-      logger.debug "ABOUT: #{d}"
     end
     d
   end

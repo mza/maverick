@@ -5,7 +5,7 @@ class PagesController < ApplicationController
       redirect_to_default
     else
       @site = Site.find_by_nickname(params[:id])
-      @posts = @site.posts
+      @posts = @site.posts.values_at 0..4
     end
   end
   

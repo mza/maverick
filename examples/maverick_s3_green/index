@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Green is Good : software, science, etc</title>
+	<meta name="author" content="Matt Wood">
+	
+	<link rel="stylesheet" href="/pages/styles/green" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<!-- Date: 2009-01-23 -->
+	
+</head>
+<body>
+	<div id='content'>
+		<div class='title'>
+			<h1>Software. Science. Etc.</h1>
+		</div>
+		<div id='header'>
+			<div class='toc'>
+				<h2><strong>Table</strong> of <strong>contents</strong></h2>
+				<ul>
+					<li><a href='#articles'>Articles</a></li>
+					<li><a href='#greencasts'>Greencasts</a></li>
+					<li><a href='#projects'>Projects</a></li>				
+					<li><a href='#about'>About</a></li>
+					<li><a href='#contact'>Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class='collection'>
+			<h2><strong>1.</strong> Articles</h2><a name='articles' />
+			<ul>
+			<% for item in @posts %>
+			<li><%= overview item, :for => @site %></li>
+			<% end %>
+			<li><em>Also:</em> <a href='http://greenisgood.tumblr.com'>Loosely Coupled</a>, the linked list</a>
+			</ul>
+		</div>
+		
+		<div class='collection break'>
+			<h2><strong>2.</strong> Greencasts</h2><a name='greencasts' />
+			<h3>Screencasts on software, science and the space in-between.</h3>
+			<div class='video'>
+				<div class='preview'><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="114" id="viddler_4cdaa2e6"><param name="movie" value="http://www.viddler.com/simple/4cdaa2e6/" /><param name="allowScriptAccess" value="always" /><param name="allowFullScreen" value="true" /><embed src="http://www.viddler.com/simple/4cdaa2e6/" width="150" height="114" type="application/x-shockwave-flash" allowScriptAccess="always" allowFullScreen="true" name="viddler_4cdaa2e6" ></embed></object></div>
+				<div class='details'>
+					<a href='http://www.viddler.com/explore/themza/videos/2/'>Into the Wonderful: towards a virtual institute</a>
+					<p>
+						An introduction to cloud computing, painted from a scientists perspective.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class='collection'>
+			<h2><strong>3.</strong> Projects</h2><a name='projects' />
+			<ul>
+				<li><a href=''>Mission Control</a> and <a href=''>Launch Pad</a><br>A platform for distributed computation in the Cloud.</li>
+				<li><a href=''>Storm Control</a><br>A visualisation tool for continuous integration.</li>
+				<li><a href=''>Sequencescape</a><br>Project, sample and laboratory information management for scientific workflows.</li>				
+				<li><a href=''>Maverick</a><br>A drop dead simple web publishing platform, built for Amazon Web Services.</li>				
+				
+			</ul>
+		</div>
+
+		<div class='collection'>
+			<h2><strong>4.</strong> About</h2><a name='about' />
+			<h3>Green is Good is written and produced by Matt Wood.</h3>
+			<p>
+				I am currently the head of Production Software at the <a href='http://www.sanger.ac.uk'>Wellcome Trust 
+				Sanger Institute</a>, a genomic research facility in <a href='http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=cambridge&sll=52.023292,0.243034&sspn=0.110066,0.222816'>Cambridge, UK</a>.
+			</p>
+			<p>
+				Previously, I've built grid computers in <a href='http://www.nottingham.ac.uk'>Nottingham</a>, web scale <a href='http://www.twease.org'>search tools</a> in <a href='http://www.cornell.edu/'>New York City</a> and <a href='http://www.ensembl.org'>genes in Hinxton</a>.
+			</p>
+		</div>
+
+		<div class='collection'>
+			<h2><strong>5.</strong> Contact</h2><a name='contact' />
+			<ul>
+				<li>via <a href='mailto:matt.j.wood@gmail.com'>email</a></li>
+				<li>on <a href=''>Twitter</a></li>
+				<li>on <a href=''>Friendfeed</a></li>	
+			</ul>
+		</div>
+
+
+		
+	</div>
+</body>
+</html>
