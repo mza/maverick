@@ -31,7 +31,7 @@
 		</div>
 		
 		<div class='collection'>
-			<h2><strong>1.</strong> Articles</h2><a name='articles' />
+			<h2><strong>1.</strong> Articles</h2><a name='articles'></a>
 			<ul>
 			<% for item in @posts %>
 			<li><%= overview item, :for => @site %></li>
@@ -41,7 +41,7 @@
 		</div>
 		
 		<div class='collection break'>
-			<h2><strong>2.</strong> Greencasts</h2><a name='greencasts' />
+			<h2><strong>2.</strong> Greencasts</h2><a name='greencasts'></a>
 			<h3>Screencasts on software, science and the space in-between.</h3>
 			<div class='video'>
 				<div class='preview'><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="114" id="viddler_4cdaa2e6"><param name="movie" value="http://www.viddler.com/simple/4cdaa2e6/" /><param name="allowScriptAccess" value="always" /><param name="allowFullScreen" value="true" /><embed src="http://www.viddler.com/simple/4cdaa2e6/" width="150" height="114" type="application/x-shockwave-flash" allowScriptAccess="always" allowFullScreen="true" name="viddler_4cdaa2e6" ></embed></object></div>
@@ -52,21 +52,27 @@
 					</p>
 				</div>
 			</div>
-		</div>
-
-		<div class='collection'>
-			<h2><strong>3.</strong> Projects</h2><a name='projects' />
+			<h3>Upcoming presentations:</h3>
 			<ul>
-				<li><a href=''>Mission Control</a> and <a href=''>Launch Pad</a><br>A platform for distributed computation in the Cloud.</li>
-				<li><a href=''>Storm Control</a><br>A visualisation tool for continuous integration.</li>
-				<li><a href=''>Sequencescape</a><br>Project, sample and laboratory information management for scientific workflows.</li>				
-				<li><a href=''>Maverick</a><br>A drop dead simple web publishing platform, built for Amazon Web Services.</li>				
-				
+				<li><a href='http://www.sanger.ac.uk'>Wellcome Trust Sanger Institute</a><br><i>The next generation sequencing platform</i>: Wednesday 28th January</li>
+				<li><a href='http://www.refreshcambridge.org/' target='_blank'>Refresh Cambridge</a><br><i>Software development with Scrum</i>: Wednesday 4th February, 2009</li>
+				<li><a href='http://www.cl.cam.ac.uk/supporters-club/' target='_blank'>The Computer Laboratory, Cambridge University</a><br><i>Bases in the Cloud</i>: Tuesday 17th March, 2009</li>
 			</ul>
 		</div>
 
 		<div class='collection'>
-			<h2><strong>4.</strong> About</h2><a name='about' />
+			<h2><strong>3.</strong> Projects</h2><a name='projects'></a>
+			<ul>
+				<li><a href='http://github.com/mza/mission-control/tree/' target='_blank'>Mission Control</a> and <a href='http://github.com/mza/launch-pad' target='_blank'>Launch Pad</a><br>A platform for distributed computation in the Cloud.</li>
+				<li><a href='http://github.com/mza/storm-control' target='_blank'>Storm Control</a><br>A visualisation tool for continuous integration.</li>
+				<!-- li><a href='' target='_blank'>Sequencescape</a><br>Project, sample and laboratory information management for scientific workflows.</li-->
+				<li><a href='http://github.com/mza/maverick' target='_blank'>Maverick</a><br>A drop dead simple web publishing platform, built for Amazon Web Services.</li>
+				<li><a href='http://github.com/mza/denormalizer' target='_blank'>The Denormalizer</a><br>A small Rails plugin for denormalization.</li>				
+			</ul>
+		</div>
+
+		<div class='collection'>
+			<h2><strong>4.</strong> About</h2><a name='about'></a>
 			<h3>Green is Good is written and produced by Matt Wood.</h3>
 			<p>
 				I am currently the head of Production Software at the <a href='http://www.sanger.ac.uk'>Wellcome Trust 
@@ -78,11 +84,11 @@
 		</div>
 
 		<div class='collection'>
-			<h2><strong>5.</strong> Contact</h2><a name='contact' />
+			<h2><strong>5.</strong> Contact</h2><a name='contact'></a>
 			<ul>
 				<li>via <a href='mailto:matt.j.wood@gmail.com'>email</a></li>
-				<li>on <a href=''>Twitter</a></li>
-				<li>on <a href=''>Friendfeed</a></li>	
+				<li>on <a href='http://twitter.com/mza' target='_blank'>Twitter</a></li>
+				<li>on <a href='http://friendfeed.com/themza' target='_blank'>Friendfeed</a></li>	
 			</ul>
 		</div>
 
