@@ -13,24 +13,20 @@
 	
 </head>
 <body>
-	<div id='header'>
-		<div id='logo'>
-			<a href='/'><img src='/images/green/logo.gif' width='66' height='43' alt='Green is good'></a>
+	<div id='content'>
+		<div class='title'>
+			<h1>Software. Science. Etc.</h1>
 		</div>
-		<div id='tag'>
-			<a href='/'><img src='/images/green/tag.gif' width='261' height='19' alt='Software, science and the space in-between'></a>
+		<div id='header'>
+			<div class='toc'>
+				<h2><strong>Table</strong> of <strong>contents</strong></h2>
+				<ul>
+					<li><a href='#articles'>Articles</a></li>
+					<li><a href='#greencasts'>Greencasts</a></li>
+					<li><a href='#projects'>Projects</a></li>				
+					<li><a href='#about'>About</a></li>
+					<li><a href='#contact'>Contact</a></li>
+				</ul>
+			</div>
 		</div>
-		<br clear='all' />
-	</div>
-	<div class='container'>
-		<div id='menu'>
-			<ul>
-				<li class='selected'><a href='/green'>Weblog</a></li>
-				<li><a href='/greencast'>Screencasts</a></li>
-				<li><a href='http://greenisgood.tumblr.com'>Linked list</a></li>
-				<li><a href='/green/pages/show/helloworld'>About</a></li>
-				<li><a href='/green/pages/show/contact'>Contact</a></li>
-			</ul>
-		</div>
-		<div id='content'>
-			<div id='posts'>
+		<div id='posts'>

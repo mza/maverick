@@ -4,6 +4,20 @@ body {
 	background: #fff url(/images/green/logo.gif) no-repeat;
 }
 
+div#posts {
+	margin-top: 14px;
+	width: 700px;
+	font-size: 12px;
+	margin-bottom: 40px;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	line-height: 18px;
+	text-align: justify;
+}
+
+div#posts a {
+	color: #008000;
+}
+
 div.video:after,
 div.collection:after, 
 div.toc:after {

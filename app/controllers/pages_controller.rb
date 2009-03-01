@@ -11,7 +11,7 @@ class PagesController < ApplicationController
   
   def styles
     @site = Site.find_by_nickname(params[:id])
-    render :text => @site.stylesheet.content
+    render :text => @site.stylesheet.content, :use_full_path => true, :content_type => "text/css"
   end
   
   def show
