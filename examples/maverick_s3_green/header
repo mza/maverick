@@ -21,11 +21,11 @@
 			<div class='toc'>
 				<h2><strong>Table</strong> of <strong>contents</strong></h2>
 				<ul>
-					<li><a href='#articles'>Articles</a></li>
-					<li><a href='#greencasts'>Greencasts</a></li>
-					<li><a href='#projects'>Projects</a></li>				
-					<li><a href='#about'>About</a></li>
-					<li><a href='#contact'>Contact</a></li>
+					<li><a href='/green#articles'>Articles</a></li>
+					<li><a href='/green#greencasts'>Greencasts</a></li>
+					<li><a href='/green#projects'>Projects</a></li>				
+					<li><a href='/green#about'>About</a></li>
+					<li><a href='/green#contact'>Contact</a></li>
 				</ul>
 			</div>
 		</div>

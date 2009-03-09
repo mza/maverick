@@ -54,9 +54,12 @@
 			</div>
 			<h3>Upcoming presentations:</h3>
 			<ul>
+				<!-- 
 				<li><a href='http://www.sanger.ac.uk'>Wellcome Trust Sanger Institute</a><br><i>The next generation sequencing platform</i>: Wednesday 28th January</li>
-				<li><a href='http://www.refreshcambridge.org/' target='_blank'>Refresh Cambridge</a><br><i>Software development with Scrum</i>: Wednesday 4th February, 2009</li>
+				<li><a href='http://www.refreshcambridge.org/' target='_blank'>Refresh Cambridge</a><br><i>Software development with Scrum</i>: Wednesday 4th February, 2009</li> 
+				-->
 				<li><a href='http://www.cl.cam.ac.uk/supporters-club/' target='_blank'>The Computer Laboratory, Cambridge University</a><br><i>Bases in the Cloud</i>: Tuesday 17th March, 2009</li>
+				<li><a href='http://www.cl.cam.ac.uk/supporters-club/' target='_blank'>Orchestrating the Cloud</a><br><i>RailsConf 2009, Las Vegas</i>: Tuesday 7th May, 2009</li>				
 			</ul>
 		</div>
 
